@@ -19,6 +19,8 @@ muak/        무악현대아파트 재건축 (준비 중)
 
 새 프로젝트를 추가할 때는 폴더를 만들고, Netlify에서 **Add new site → Import from Git**으로 같은 저장소를 고른 뒤 Publish directory만 그 폴더 이름으로 넣으면 됩니다.
 
+> **운용 매뉴얼은 [](OPERATIONS.md)에 있습니다.** 구축 경위, Netlify 설정값, 문제 해결, 새 프로젝트 추가 방법까지 정리되어 있습니다.
+
 ## 수정 방법
 
 1. 위 파일 목록에서 폴더(`godeok1`) → `index.html` 클릭
