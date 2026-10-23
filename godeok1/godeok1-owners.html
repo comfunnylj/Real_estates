@@ -35,6 +35,19 @@
   --serif:"Gowun Batang",'Nanum Myeongjo',ui-serif,Georgia,serif;
   --sans:"IBM Plex Sans KR",'Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif;
 }
+
+.cta{display:block;margin:0 0 26px;padding:18px 22px;border-radius:12px;
+  background:var(--zone);color:#fff;text-decoration:none;
+  border:1px solid var(--zone);transition:filter .15s ease,transform .15s ease}
+.cta:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.cta .cta-l{display:block;font-size:13px;letter-spacing:.04em;opacity:.85;margin-bottom:5px}
+.cta .cta-t{display:block;font-family:var(--serif);font-size:23px;font-weight:700;line-height:1.3}
+.cta .cta-s{display:block;font-size:14.5px;opacity:.92;margin-top:7px;line-height:1.5}
+.cta .cta-go{display:inline-block;margin-top:12px;padding:8px 16px;border-radius:7px;
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.45);
+  font-size:14.5px;font-weight:600}
+@media(max-width:520px){.cta{padding:16px 17px}.cta .cta-t{font-size:20px}}
+
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --paper:#12191A; --panel:#1A2324; --ink:#E7EDE8; --ink2:#A7B5B4; --ink3:#7F8D8C;
@@ -152,6 +165,13 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
 </head>
 <body>
 <div class="wrap">
+
+<a class="cta" href="https://godeok1form001.netlify.app/" target="_blank" rel="noopener">
+  <span class="cta-l">온라인 사전동의서</span>
+  <span class="cta-t">사전동의서를 온라인으로 작성하실 수 있습니다</span>
+  <span class="cta-s">종이 서류 없이 휴대폰으로 바로 제출하실 수 있습니다. 사전동의는 정비계획 입안을 위한 의견 제출이며, 추후 조합설립 동의와는 별개로 언제든 철회하실 수 있습니다.</span>
+  <span class="cta-go">작성하러 가기 →</span>
+</a>
 
 <header>
   <div class="kicker">서울특별시 강동구 고덕동 536번지 일대</div>
