@@ -168,6 +168,25 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
   font-size:13px;color:var(--ink3);line-height:1.7}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 :focus-visible{outline:2px solid var(--zone);outline-offset:2px}
+
+/* godeok1-fold-v1 */
+.fold-intro{margin:8px 0 14px;color:var(--ink2);font-size:15px;line-height:1.65}
+.fold-detail{margin:10px 0 0;border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden}
+.fold-detail>summary{list-style:none;cursor:pointer;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--zone);font-size:15px;font-weight:600;user-select:none}
+.fold-detail>summary::-webkit-details-marker{display:none}
+.fold-detail>summary .fold-less{display:none}
+.fold-detail[open]>summary .fold-more{display:none}
+.fold-detail[open]>summary .fold-less{display:inline}
+.fold-detail>summary .fold-chevron{font-size:18px;line-height:1;transition:transform .18s ease}
+.fold-detail[open]>summary .fold-chevron{transform:rotate(180deg)}
+.fold-body{padding:6px 16px 18px;border-top:1px solid var(--line2)}
+.fold-body>:first-child{margin-top:10px}
+@media(max-width:520px){
+  .fold-intro{font-size:14px;line-height:1.65}
+  .fold-detail>summary{padding:12px 14px;font-size:14.5px}
+  .fold-body{padding:4px 14px 16px}
+}
+
 </style>
 </head>
 <body>
@@ -225,8 +244,13 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
 
 <!-- 사업성 -->
 <section>
-  <div class="mark">
-    <h2>소유자는 적고 지을 집은 많습니다</h2>
+<h2>소유자는 적고 지을 집은 많습니다</h2>
+<p class="fold-intro">총 세대수, 토지등소유자 수, 일반분양 물량, 용적률과 기부채납 구조를 한눈에 정리했습니다.</p>
+<details class="fold-detail">
+  <summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary>
+  <div class="fold-body">
+<div class="mark">
+    
     <p>재개발의 사업성은 결국 이 비율에서 나옵니다. 조합원에게 나눠줄 집을 빼고 얼마나 많이 남아서 일반에 팔 수 있느냐입니다.</p>
   </div>
 
@@ -299,6 +323,8 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
   </div>
   <p>건축물 기부채납은 건축대지를 줄이지 않으므로 건축대지는 <b>87,739㎡</b>를 유지합니다. 이를 반영한 정비계획용적률은 <b>250.00%</b>, 도정법 제54조를 적용한 최종 용적률은 <b>264.42%</b>, 지상연면적은 <b>231,999㎡</b>로 산정되었습니다.</p>
   <p class="quote">기부채납 적정성은 총량 30.16%가 아니라 국공유지 무상양도를 뺀 순부담을 기준으로 봐야 합니다. 본 분석은 토지 순부담 3.92%와 건축물 기부채납 환산 8.58%를 합산한 총 순부담률 12.50%를 적용했습니다.</p>
+  </div>
+</details>
 </section>
 
 <!-- 분담금 -->
@@ -344,8 +370,13 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
 
 <!-- 자산 증가 -->
 <section>
-  <div class="mark">
-    <h2>내 재산은 얼마나 불어나나</h2>
+<h2>내 재산은 얼마나 불어나나</h2>
+<p class="fold-intro">빌라·단독주택 소유자의 예상 분담금·환급금과 재개발 후 자산 변화를 예시로 확인할 수 있습니다.</p>
+<details class="fold-detail">
+  <summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary>
+  <div class="fold-body">
+<div class="mark">
+    
     <p>가장 궁금하신 부분일 겁니다. 분담금과 환급금까지 모두 넣어 계산했습니다.</p>
   </div>
 
@@ -437,12 +468,19 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
   </div>
 
   <p class="quote">그리고 이 모든 것은 사업이 진행됐을 때의 이야기입니다. 지금 아무것도 하지 않으면 빌라는 빌라로, 단독주택은 단독주택으로 남습니다.</p>
+  </div>
+</details>
 </section>
 
 <!-- 분양가 산정 -->
 <section>
-  <div class="mark">
-    <h2>분양가는 이렇게 정했습니다</h2>
+<h2>분양가는 이렇게 정했습니다</h2>
+<p class="fold-intro">일반분양가와 조합원분양가를 어떤 기준으로 정했는지 비교단지와 계산방식을 설명합니다.</p>
+<details class="fold-detail">
+  <summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary>
+  <div class="fold-body">
+<div class="mark">
+    
     <p>분양가를 어떻게 잡느냐에 따라 분담금이 달라집니다. 임의로 정하지 않고 <b>인근 아파트가 실제로 거래된 가격</b>에서 출발했습니다.</p>
   </div>
 
@@ -494,12 +532,19 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
   <h3 class="sub">넷째, 계산기의 「일반분양가」는 참고값입니다</h3>
   <p>앞의 계산기에 나오는 <b>일반분양가</b>는 조합원이 내는 금액이 아닙니다. 같은 평형을 일반에 분양할 때의 가격으로, 조합원분양가와 얼마나 차이가 나는지 보시라고 함께 표시한 것입니다. 39·49·59형 7,517만원, 84형 6,309만원, 99형 6,120만원, 125형 5,673만원 기준입니다.</p>
   <p class="note">분양가는 감정평가와 분양가 심의를 거쳐 확정됩니다. 위 금액은 그 이전 단계의 산정치이며, 입주 시점의 부동산 시장 상황에 따라 달라질 수 있습니다.</p>
-  </section>
+  </div>
+</details>
+</section>
 
 <!-- 단독주택 -->
 <section>
-  <div class="mark">
-    <h2>단독주택 소유자께</h2>
+<h2>단독주택 소유자께</h2>
+<p class="fold-intro">단독주택 소유자의 1+1 분양, 세대구분형, 중대형 배정과 장기 보유 시나리오를 정리했습니다.</p>
+<details class="fold-detail">
+  <summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary>
+  <div class="fold-body">
+<div class="mark">
+    
     <p>재개발은 내 재산을 내놓는 일이 아니라 <b>자산의 형태를 바꾸는 일</b>입니다. 종전자산이 큰 단독주택 소유자는 이 사업에서 가장 유리한 자리에 있습니다. 큰 평형을 우선 배정받고, 두 채까지 받을 수 있으며, 그러고도 분담금 대신 환급이 발생합니다.</p>
   </div>
 
@@ -590,12 +635,19 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
   </div>
 
   <p class="quote">단독주택 소유자는 이 사업에서 가장 얻을 것이 많은 동시에, 사업이 무산될 때 가장 잃을 것도 많습니다. 30억원이라는 값은 재개발이 될 것이라는 전제 위에 서 있습니다.</p>
+  </div>
+</details>
 </section>
 
 <!-- 신축 영향 -->
 <section>
-  <div class="mark">
-    <h2>이미 자산이 깎이고 있습니다</h2>
+<h2>이미 자산이 깎이고 있습니다</h2>
+<p class="fold-intro">신축 다세대 증가가 기존 소유자의 권리가액과 비례율에 미치는 영향과 권리산정기준일의 중요성을 설명합니다.</p>
+<details class="fold-detail">
+  <summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary>
+  <div class="fold-body">
+<div class="mark">
+    
     <p>가정이 아닙니다. <b>구역 안에서 지금 벌어지고 있는 일</b>입니다.</p>
   </div>
 
@@ -667,12 +719,19 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
   <p>지금은 <b>개별 건축허가를 막을 법적 근거가 없습니다.</b> 내 땅에 내가 집을 짓겠다는데 조합이 말릴 수 없습니다.</p>
   <p>이를 차단하는 유일한 장치가 <b>권리산정기준일</b>입니다. 이 날짜가 지정되면 그 이후에 새로 지어지거나 나뉜 지분은 <b>분양자격을 얻지 못합니다.</b> 기준일은 정비구역 지정 고시일이 원칙이지만, 서울시가 그보다 앞선 날로 따로 정할 수도 있습니다.</p>
   <p class="quote">기준일을 받으려면 정비구역 지정 절차가 진행되어야 하고, 그러려면 소유자 여러분의 동의가 필요합니다. <b>사업 추진이 늦어지는 하루하루가 곧 자산 감소로 쌓입니다.</b></p>
+  </div>
+</details>
 </section>
 
 <!-- 휴먼타운 -->
 <section>
-  <div class="mark">
-    <h2>휴먼타운 2.0은 우리 구역의 대안이 아닙니다</h2>
+<h2>휴먼타운 2.0은 우리 구역의 대안이 아닙니다</h2>
+<p class="fold-intro">휴먼타운 2.0과 재개발의 차이, 고덕1지구에서 왜 대체관계로 보기 어려운지 정리했습니다.</p>
+<details class="fold-detail">
+  <summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary>
+  <div class="fold-body">
+<div class="mark">
+    
     <p>일부에서 재개발 대신 휴먼타운 2.0을 이야기합니다. 나쁜 제도가 아닙니다. 다만 <b>우리 구역을 대상으로 하는 제도가 아닙니다.</b></p>
   </div>
 
@@ -707,12 +766,19 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
   <p>휴먼타운 2.0 시범사업지는 종로구 신영동, 구로구 구로동, 중랑구 망우동 세 곳입니다. 모두 번지 단위의 작은 구역이고, 이제 후보지 10곳으로 넓히는 단계입니다. 125,630㎡에 토지등소유자 858명인 우리 구역을 이 방식으로 정비한다는 것은 현실적인 이야기가 아닙니다.</p>
 
   <p>정리하면 이렇습니다. 휴먼타운 2.0은 <b>재개발을 할 수 없는 동네가 차선책으로 선택하는 제도</b>입니다. 재개발이 가능한 구역이 스스로 그 길을 고를 이유는 없습니다.</p>
+  </div>
+</details>
 </section>
 
 <!-- 무엇을 짓나 -->
 <section>
-  <div class="mark">
-    <h2>무엇을 짓나</h2>
+<h2>무엇을 짓나</h2>
+<p class="fold-intro">총 세대수와 평형별 구성, 향후 조정 가능한 부분을 정리했습니다.</p>
+<details class="fold-detail">
+  <summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary>
+  <div class="fold-body">
+<div class="mark">
+    
     <p>39형부터 125형까지 여섯 가지 평형으로 구성합니다.</p>
   </div>
   <div class="tw">
@@ -735,12 +801,19 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
   <h3 class="sub">평형 구성은 앞으로 조정됩니다</h3>
   <p>위 평형 배정은 <b>예전 추진 당시의 기준</b>으로 작성된 것입니다. 39형부터 59형까지 소형이 전체의 60%를 차지하는 구성인데, 앞으로 추진 상황에 맞추어 <b>소형 평형을 줄이고 중대형 평형을 늘릴 예정</b>입니다.</p>
   <p>중대형 비중이 커지면 조합원이 선택할 수 있는 평형의 폭이 넓어지고, 1+1 배정이나 세대구분형 적용도 수월해집니다. 실제 평형 구성은 조합 설립 이후 조합원 수요조사와 건축계획 수립을 거쳐 확정됩니다.</p>
+  </div>
+</details>
 </section>
 
 <!-- 돈의 흐름 -->
 <section>
-  <div class="mark">
-    <h2>돈은 이렇게 흐릅니다</h2>
+<h2>돈은 이렇게 흐릅니다</h2>
+<p class="fold-intro">총매출·총사업비·사업이익이 어떻게 구성되고 비례율로 이어지는지 보여드립니다.</p>
+<details class="fold-detail">
+  <summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary>
+  <div class="fold-body">
+<div class="mark">
+    
     <p>아파트를 팔아 들어오는 돈에서 짓는 데 드는 돈을 빼면 사업이익이 남습니다. 이 이익을 소유자 전체의 재산 평가액으로 나눈 값이 비례율입니다.</p>
   </div>
   <div class="tw">
@@ -769,11 +842,18 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
       </tbody>
     </table>
   </div>
+  </div>
+</details>
 </section>
 
 <!-- 강점 -->
 <section>
-  <div class="mark"><h2>그 밖의 강점</h2></div>
+<h2>그 밖의 강점</h2>
+<p class="fold-intro">조합방식, 임대주택 부속토지, 이주비, 공사비 가정 등 사업의 추가 강점을 모았습니다.</p>
+<details class="fold-detail">
+  <summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary>
+  <div class="fold-body">
+<div class="mark"></div>
   <div class="pts">
     <article>
       <h3>조합방식 — 신탁수수료 0원</h3>
@@ -792,12 +872,19 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
       <p>지상 1,273만원, 지하 750만원으로 나누어 계산했고, 총연면적 기준 가중평균은 평당 1,050만원입니다. 2025년 서울 정비사업 평균 890만원, 비강남·비한강 평균 868만원보다 높게 잡아 공사비 상승에 대비했습니다.</p>
     </article>
   </div>
+  </div>
+</details>
 </section>
 
 <!-- 가정 -->
 <section>
-  <div class="mark">
-    <h2>어떤 전제로 계산했나</h2>
+<h2>어떤 전제로 계산했나</h2>
+<p class="fold-intro">사업수지 계산에 사용한 주요 전제와 아직 확정되지 않은 가정을 확인할 수 있습니다.</p>
+<details class="fold-detail">
+  <summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary>
+  <div class="fold-body">
+<div class="mark">
+    
     <p>수치의 근거와 확실성을 그대로 공개합니다.</p>
   </div>
   <div class="tw">
@@ -816,11 +903,18 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
       </tbody>
     </table>
   </div>
+  </div>
+</details>
 </section>
 
 <!-- 유의 -->
 <section>
-  <div class="mark"><h2>반드시 확인해 주세요</h2></div>
+<h2>반드시 확인해 주세요</h2>
+<p class="fold-intro">현재 수치는 추정치이며 감정평가·인허가·분양가 심의·관리처분 과정에서 달라질 수 있습니다.</p>
+<details class="fold-detail">
+  <summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary>
+  <div class="fold-body">
+<div class="mark"></div>
   <div class="warn">
     <h3>이 자료의 숫자는 아직 확정된 것이 아닙니다</h3>
     <ul>
@@ -834,6 +928,8 @@ footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
     </ul>
   </div>
   <p style="font-size:14.5px;color:var(--ink2)">계산의 전 과정과 근거 자료는 「고덕1지구 재개발정비사업 사업수지분석」 보고서에 정리되어 있습니다. 추진위원회로 요청하시면 열람하실 수 있습니다.</p>
+  </div>
+</details>
 </section>
 
 <!-- 동참 요청 -->
