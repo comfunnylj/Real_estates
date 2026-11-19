@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>고덕1구역 | 반대측 주장에 대한 논변</title>
+<meta name="description" content="반대측 영상에서 제기된 13개 논점에 대한 답변. 전단지 요약과 회의자료 상세내역.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --paper:#F4F6F1;--panel:#fff;--ink:#19282A;--ink2:#56666A;--ink3:#7C8A8C;
+ --line:#CBD4CE;--line2:#E2E8E2;--zone:#B93E2B;--park:#3B6A4C;--plot:#C9A23C;
+ --zone-soft:#F6E6E1;--park-soft:#E4EDE5;--plot-soft:#F7EFD9;
+ --serif:"Gowun Batang",'Nanum Myeongjo',ui-serif,Georgia,serif;
+ --sans:"IBM Plex Sans KR",'Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif;
+}
+@media(prefers-color-scheme:dark){
+ :root:not([data-theme="light"]){
+  --paper:#12191A;--panel:#1A2324;--ink:#E7EDE8;--ink2:#A7B5B4;--ink3:#7F8D8C;
+  --line:#32413F;--line2:#263230;--zone:#E2725B;--park:#7FB58C;--plot:#DCBB63;
+  --zone-soft:#2C1E1B;--park-soft:#1B2A20;--plot-soft:#2A2517;
+ }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7}
+a{color:var(--zone)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+.site-switcher-wrap{position:sticky;top:0;z-index:999;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(0,0,0,.04)}
+.site-switcher{max-width:980px;margin:0 auto;padding:8px 12px;display:grid;grid-template-columns:1fr 1.55fr 1fr;gap:7px}
+.site-switch{min-height:44px;border:1px solid var(--line);background:var(--panel);color:var(--ink2);text-decoration:none;display:flex;align-items:center;justify-content:center;text-align:center;padding:7px 8px;font-size:12.5px;font-weight:700;line-height:1.25}
+.site-switch.is-active{background:var(--park);color:#fff;border-color:var(--park)}
+.site-switch.is-response.is-active{background:var(--zone);border-color:var(--zone);color:#fff}
+.site-switch.is-disabled{background:var(--line2);color:var(--ink3);opacity:.58;border-style:dashed;cursor:default}
+.site-switch small{display:block;font-size:9.8px;font-weight:500;margin-top:2px;opacity:.8}
+header{padding:40px 0 10px}
+.kicker{font-size:13px;color:var(--ink3);margin-bottom:10px}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.34;margin:0}
+h1{font-size:clamp(31px,7vw,47px)}
+.lede{font-size:16.5px;color:var(--ink2);margin:15px 0 0}
+.response-lead{border:1px solid var(--zone);background:var(--zone-soft);padding:18px;margin:22px 0}
+.response-lead h2{font-size:20px;color:var(--zone);margin-bottom:8px}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:1px;border:1px solid var(--line2);background:var(--line2);margin:18px 0}
+.metric{background:var(--panel);padding:13px}
+.metric small{display:block;color:var(--ink3);font-size:11px}
+.metric b{font-family:var(--serif);font-size:20px}
+.issue{margin:14px 0;border:1px solid var(--line);background:var(--panel);border-radius:12px;overflow:hidden}
+.issue-top{padding:17px 16px 14px;border-left:4px solid var(--zone)}
+.issue-head{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
+.issue-no{font-weight:800;color:var(--zone);font-size:13px;letter-spacing:.04em;min-width:24px}
+.issue-title{font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.42;flex:1}
+.issue-status{font-size:10.5px;font-weight:700;padding:4px 7px;background:var(--zone-soft);color:var(--zone);border:1px solid var(--line);white-space:nowrap}
+.issue-summary{font-weight:700;font-size:14px;margin:6px 0;color:var(--ink)}
+.issue-body{font-size:13.5px;color:var(--ink2);margin:0}
+.issue-source{font-size:11.5px;color:var(--ink3);margin-top:9px}
+.issue details{border-top:1px solid var(--line2)}
+.issue summary{list-style:none;cursor:pointer;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;font-size:13.5px;font-weight:700;color:var(--zone)}
+.issue summary::-webkit-details-marker{display:none}
+.issue summary .close-txt{display:none}
+.issue details[open] summary .open-txt{display:none}
+.issue details[open] summary .close-txt{display:inline}
+.detail-body{padding:4px 16px 20px;background:color-mix(in srgb,var(--panel) 93%,var(--paper))}
+.source-chapter{font-size:20px;color:var(--ink);margin:24px 0 10px;padding-top:15px;border-top:2px solid var(--line)}
+.source-subhead{font-family:var(--sans);font-size:16px;margin:22px 0 8px;color:var(--ink)}
+.source-p,.source-bullet{font-size:13.5px;color:var(--ink2);margin:0 0 12px}
+.source-bullet{padding-left:12px}
+.source-note{font-size:12px;color:var(--ink3);padding:10px 12px;background:var(--paper);border-left:3px solid var(--plot);margin:12px 0}
+.source-table-wrap{overflow-x:auto;margin:13px 0 17px;-webkit-overflow-scrolling:touch}
+.source-table{border-collapse:collapse;width:100%;min-width:480px;background:var(--panel);font-size:12.5px}
+.source-table th,.source-table td{border:1px solid var(--line2);padding:7px 8px;vertical-align:top;text-align:left}
+.source-table th{background:var(--park-soft);font-weight:700}
+.preamble,.closing{margin:20px 0;border:1px solid var(--line);background:var(--panel);border-radius:10px;overflow:hidden}
+.preamble summary,.closing summary{cursor:pointer;list-style:none;padding:14px 16px;font-weight:700;color:var(--park)}
+.preamble summary::-webkit-details-marker,.closing summary::-webkit-details-marker{display:none}
+.preamble .detail-body,.closing .detail-body{border-top:1px solid var(--line2)}
+.final-check{border:1px solid var(--park);background:var(--park-soft);padding:17px;margin:24px 0}
+.final-check h2{font-size:19px;margin-bottom:8px}
+.verify-table{width:100%;border-collapse:collapse;font-size:12.5px;background:var(--panel)}
+.verify-table th,.verify-table td{border:1px solid var(--line2);padding:8px}
+.verify-table th{background:var(--park-soft)}
+footer{margin-top:42px;border-top:1px solid var(--line);padding:22px 0 70px;font-size:12px;color:var(--ink3)}
+.to-top{
+ position:fixed;left:14px;bottom:16px;z-index:1200;
+ border:1px solid var(--line);background:var(--panel);color:var(--ink);
+ text-decoration:none;border-radius:999px;padding:9px 12px;
+ font-size:12.5px;font-weight:700;box-shadow:0 5px 18px rgba(0,0,0,.14)
+}
+.to-top:hover{border-color:var(--zone);color:var(--zone)}
+@media(max-width:560px){
+ .site-switcher{grid-template-columns:1fr 1.45fr .8fr;padding:7px 9px;gap:5px}
+ .site-switch{font-size:11px;padding:6px 4px}
+ .wrap{padding:0 16px}
+ .issue-top{padding:15px 13px 13px}
+ .issue-title{font-size:16.5px}
+ .issue-status{font-size:9.5px}
+ .detail-body{padding:3px 12px 17px}
+ .metrics{grid-template-columns:1fr 1fr}
+ .to-top{left:10px;bottom:12px;padding:8px 10px;font-size:11.5px}
+}
+
+/* ===== cost rebuttal emphasis ===== */
+.cost-rank-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0
+}
+.cost-rank{
+  border:1px solid var(--line);background:var(--paper);
+  padding:12px 11px
+}
+.cost-rank small{
+  display:block;font-size:10.5px;color:var(--ink3);font-weight:700;margin-bottom:3px
+}
+.cost-rank span{
+  display:block;font-size:10.5px;color:var(--ink3);line-height:1.35
+}
+.cost-rank b{
+  display:block;font-family:var(--serif);font-size:22px;color:var(--zone);margin:4px 0 2px
+}
+.cost-rank em{
+  display:block;font-style:normal;font-size:10.5px;font-weight:700;color:var(--ink2)
+}
+.cost-callout{
+  margin:13px 0;padding:14px 13px;
+  border:1px solid var(--zone);background:var(--zone-soft)
+}
+.cost-callout b{
+  display:block;font-size:13px;color:var(--ink);margin-bottom:4px
+}
+.cost-callout strong{
+  display:block;font-family:var(--serif);font-size:19px;color:var(--zone);line-height:1.45
+}
+.cost-detail-lead{
+  border-left:4px solid var(--zone);background:var(--zone-soft);
+  padding:14px 13px;margin:10px 0 18px
+}
+.cost-detail-lead h3{
+  font-family:var(--sans);font-size:15px;color:var(--zone);margin-bottom:6px
+}
+.cost-detail-lead p{
+  margin:0;font-size:13px;color:var(--ink2)
+}
+@media(max-width:520px){
+  .cost-rank-grid{grid-template-columns:1fr 1fr;gap:6px}
+  .cost-rank{padding:10px 8px}
+  .cost-rank b{font-size:19px}
+  .cost-callout strong{font-size:17px}
+}
+
+
+/* ===== rental-income response ===== */
+.rental-solution{
+  border:1px solid var(--park);
+  background:var(--park-soft);
+  padding:15px 14px;
+  margin:10px 0 22px;
+}
+.rental-solution h3{
+  font-family:var(--sans);
+  font-size:16px;
+  color:var(--park);
+  margin:0 0 7px;
+}
+.rental-solution-lead{
+  font-size:13.5px;
+  color:var(--ink2);
+  margin:0 0 12px;
+}
+.rental-solution-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:7px;
+}
+.rental-solution-grid>div{
+  background:var(--panel);
+  border:1px solid var(--line2);
+  padding:11px 12px;
+}
+.rental-solution-grid b{
+  display:block;
+  font-size:13.5px;
+  color:var(--ink);
+  margin-bottom:4px;
+}
+.rental-solution-grid span{
+  display:block;
+  font-size:12.5px;
+  line-height:1.62;
+  color:var(--ink2);
+}
+.rental-solution-note{
+  margin:10px 0 0;
+  font-size:11.5px;
+  line-height:1.6;
+  color:var(--ink3);
+}
+
+</style>
+</head>
+<body data-page="response" id="top">
+
+<div class="site-switcher-wrap">
+  <nav class="site-switcher" id="siteSwitcher"></nav>
+</div>
+
+<div class="wrap">
+<header>
+  <div class="kicker">고덕1구역 재개발 추진준비위원회 · 2026년 11월</div>
+  <h1>영상이 물은 순서 그대로,<br>13개 논점에 전부 답합니다</h1>
+  <p class="lede">「고덕1구역 반박전단지 — 논점순」은 요약으로, 「제기된 의문에 대한 답변 — 회의용」은 각 항목의 상세 근거로 배치했습니다. 요약을 먼저 읽고 <b>회의자료 상세내역 보기</b>를 누르면 해당 장의 표와 설명을 그대로 확인할 수 있습니다.</p>
+
+  <div class="response-lead">
+    <h2>답은 이미 보고서에 있었습니다</h2>
+    <p>영상에서 제기된 사업수지 관련 질문에 대해 추진준비위원회는 사업수지분석(제출용)과 회의자료에 수치·가정·민감도를 공개했다는 입장입니다. 아래 13개 항목은 전단지 순서를 그대로 따릅니다.</p>
+  </div>
+
+  <div class="metrics">
+    <div class="metric"><small>평당 총사업비</small><b>1,607만원</b></div>
+    <div class="metric"><small>총사업비 / 직접공사비</small><b>1.531</b></div>
+    <div class="metric"><small>평당 직접공사비</small><b>1,050만원</b></div>
+    <div class="metric"><small>세대당 총사업비</small><b>7.29억원</b></div>
+  </div>
+
+  <details class="preamble">
+    <summary>회의자료 머리말 · 전단지 항목별 답변 위치 보기</summary>
+    <div class="detail-body"><div class="source-table-wrap"><table class="source-table"><thead><tr><th>먼저 말씀드립니다</th><th>반대측 자료는 숫자부터 틀렸습니다. 가장 큰 것은 일반분양가와 조합원분양가를 바꿔 쓴 것입니다. 84형 조합원분양가는 15.32억원인데 일반분양가 21.88억원을 집어넣었습니다. 6.56억원을 과대계상한 것입니다. 그 결과 네 번째 장의 비례율 표 네 줄이 전부 틀렸고, 「비례율 147%가 필요하다」는 자료 전체의 결론이 그 위에서 나왔습니다. 실제로는 현행 122.702%로 이미 성립합니다. 24.3%p를 틀린 것입니다.<br><br>세대수도 그렇습니다. 당시 공개된 자료에 2,693세대로 명시되어 있었는데 2,450세대로 가정했습니다. 조합원분양가 15.32억원은 사업수지분석 보고서에 일반분양가 21.88억원과 같은 표, 같은 줄에 적혀 있습니다. 같은 보고서가 그 단독주택의 환급금까지 명시하고 있습니다. 보고서는 추진준비위원회 사무실에서 언제나 열람할 수 있었습니다. 읽지 않고 가정한 것입니다.<br><br>사업비 수준부터 분명히 합니다. 이 사업의 평당 총사업비 1,607만원은 비교 가능한 서울시 재개발 고시 사례 중 가장 높습니다. 평당 직접공사비도 12개 사례 중 1위, 세대당 총사업비도 8개 사례 중 1위, 총사업비/직접공사비 배수도 1위입니다. 네 지표 전부 1위입니다. 사업비를 얇게 잡아 수익을 부풀린 구조가 아니라, 비교 가능한 모든 사례보다 두껍게 잡았습니다.<br><br>「새 아파트에 다시 살 수 있는가」라는 물음에는 분명히 답합니다. 국공유지를 전부 빼고도 토지등소유자 1인당 사유지가 107.99㎡입니다. 그 땅에 용적률 264.42%로 2,701세대를 짓습니다. 소유자 1인당 3.15세대입니다. 집이 모자라 못 받는 일은 산술적으로 불가능합니다. 이를 알면서 묻는다면 주민을 기만하는 것입니다.<br><br>타당한 지적은 인정합니다. 개인이 내는 세금, 이주 기간의 임대수입 공백, 영업 중단과 주거 이전의 부담은 실재합니다. 환급금을 받는 경우 청산금에 대한 양도소득세가 발생할 수 있다는 점도 함께 적었습니다. 틀린 것은 틀렸다고 말합니다. 양쪽 모두에게 같은 기준입니다.</th></tr></thead></table></div>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>보고서는 처음부터 열려 있었습니다</th><th>사업수지분석 보고서는 추진준비위원회 사무실에서 언제나 누구나 열람할 수 있었습니다. 홈페이지(godeok1.netlify.app)에도 같은 내용이 공개되어 있습니다. 계산 과정, 적용 법령, 가정값, 민감도까지 전부 들어 있습니다.<br><br>「동의보다 먼저 공개하라」고 하셨습니다. 공개되어 있었습니다. 와서 보지 않으신 것입니다.<br><br>보고서에는 조합원분양가 15.32억원이 평형별 표에 적혀 있습니다. 그 표를 한 번이라도 보았다면 21.88억원을 조합원분양가로 가정할 일이 없었습니다.</th></tr></thead></table></div>
+<h4 class="source-subhead">0. 전단지 항목별 답변 위치</h4>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>전단지 항목</th><th>답변 요지</th><th>장</th><th>페이지</th></tr></thead><tbody><tr><td>01  12~14억 자산증가, 모두의 결과인가</td><td>유형별로 전혀 다릅니다. 권리가액·분담금을 유형별로 공개</td><td>Ⅳ장 2</td><td>p.7</td></tr><tr><td>02  1조 6,765억은 수입과 비용의 차액</td><td>맞습니다. 개인 배분액이 아니며 개인 정산 산식을 공개</td><td>Ⅳ장 1</td><td>p.7</td></tr><tr><td>03  17.81억 환급금은 어떤 조건에서 나오는가</td><td>조합원분양가 자리에 일반분양가를 넣은 오류. 네 줄 전부 6.56억씩 어긋남</td><td>Ⅱ장 1 · Ⅲ장</td><td>p.4, 6</td></tr><tr><td>04  공사비 외 620만원, 전체 단가의 37.1%</td><td>1,670만원은 구판 수치. 현행 1,607만원이며 항목별 금액 전부 공개</td><td>Ⅴ장 1 · Ⅰ장</td><td>p.8, 2</td></tr><tr><td>05  총사업비 10% 증가, 차액 12.5% 감소</td><td>비례율 기준으로 재계산해 수록. 수입을 고정한 전제의 문제 지적</td><td>Ⅶ장</td><td>p.9</td></tr><tr><td>06  평균 15.39억, 평형별 수입 산출지표 필요</td><td>2,450세대는 구판. 현행 2,701세대이며 평형별 분양가를 각각 공개</td><td>Ⅱ장 2 · Ⅴ장 2</td><td>p.5, 8</td></tr><tr><td>07  임대수입 공백 3~5년</td><td>타당한 지적. 월 200만원 전제의 과다 여부와 금액 비교</td><td>ⅩⅠ장 1</td><td>p.14</td></tr><tr><td>08  1+1 추가 160세대의 비용과 배정 조건</td><td>매출 1,710.4억원 반영. 배정 조건을 법령과 함께 명시</td><td>Ⅵ장</td><td>p.8</td></tr><tr><td>09  25% 이상 반대에 따른 제외 이력</td><td>반대 이력은 재추진을 제한하는 사유가 아님. 현재 절차 설명</td><td>ⅩⅣ장</td><td>p.17</td></tr><tr><td>10  새 아파트에 다시 살 수 있는가</td><td>물량과 부담은 다른 질문. 1인당 사유지 107.99㎡에 2,701세대</td><td>Ⅸ장 · Ⅹ장</td><td>p.11, 13</td></tr><tr><td>11  휴먼타운 2.0 적용 검토 건의</td><td>대상 요건·용적률·자금조달이 모두 맞지 않음</td><td>ⅩⅡ장</td><td>p.15</td></tr><tr><td>12  수입 −10%, 비용 +10% 동시 검토</td><td>해당 시나리오 수록. 비례율 81.606%에서도 환급 유지</td><td>Ⅶ장</td><td>p.9</td></tr><tr><td>13  동의 전 4가지 자료 공개 요구</td><td>네 가지 모두 이미 공개됨. ④의 현 단계 한계 설명</td><td>ⅩⅢ장</td><td>p.16</td></tr></tbody></table></div></div>
+  </details>
+</header>
+
+<main>
+
+<article class="issue" id="issue-01">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">01</div>
+      <div class="issue-title">12~14억 원 증가, 모두의 결과입니까?</div>
+      <div class="issue-status">보고서 기재사항</div>
+    </div>
+    <p class="issue-summary">모두의 결과가 아닙니다. 유형별로 나누어 적었습니다.</p>
+    <p class="issue-body">인용된 표는 종전자산 27억원인 단독주택 사례입니다. 권리가액은 빌라 6.75억 / 단독 33.13억 / 상가 45.40억 / 다가구 46.63억이며, 빌라 39형은 분담금 1.87억원으로 계산됩니다. 유형별 결과가 서로 다르다는 것이 답변의 핵심입니다.</p>
+    <div class="issue-source">회의 자료 Ⅳ장 2절 p.7 · 사업수지분석 Ⅷ. 조합원 분담금</div>
+  </div>
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      <h4 class="source-subhead">2. 「12~14억 자산증가가 모두의 결과인가」 — 아닙니다</h4>
+<p class="source-p">그 지적도 맞습니다. 홍보 자료에 실린 12.69~14.60억원은 종전자산 27억원인 단독주택 소유자를 전제로 한 값이며, 모든 소유자의 결과가 아닙니다. 유형별로 전혀 다릅니다. 전제를 모두 공개합니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>소유 유형</th><th>종전자산 (평균)</th><th>받는 평형</th><th>조합원분양가</th><th>분담금(+)/환급(−)</th><th>받는 집의 가치</th><th>순증</th></tr></thead><tbody><tr><td>단독</td><td>27.00억원</td><td>84형</td><td>15.32억원</td><td>−17.81억원</td><td>21.88억원</td><td>+12.69억원</td></tr><tr><td>단독</td><td>27.00억원</td><td>99형</td><td>17.23억원</td><td>−15.90억원</td><td>24.61억원</td><td>+13.51억원</td></tr><tr><td>단독</td><td>27.00억원</td><td>125형</td><td>19.78억원</td><td>−13.35억원</td><td>28.25억원</td><td>+14.60억원</td></tr><tr><td>빌라</td><td>5.50억원</td><td>39형</td><td>8.62억원</td><td>+1.87억원</td><td>12.31억원</td><td>+4.94억원</td></tr><tr><td>빌라</td><td>5.50억원</td><td>49형</td><td>10.69억원</td><td>+3.94억원</td><td>15.27억원</td><td>+5.83억원</td></tr><tr><td>빌라</td><td>5.50억원</td><td>59형</td><td>12.76억원</td><td>+6.01억원</td><td>18.23억원</td><td>+6.72억원</td></tr></tbody></table></div>
+<p class="source-note">[가정] 「받는 집의 가치」는 일반분양가를 그대로 적용한 것입니다. 준공 시점의 실제 시세가 아니며, 신축 프리미엄과 준공까지의 시세 상승을 0원으로 잡은 값입니다. 「순증」은 개인이 내는 취득세·양도소득세, 금융비용, 화폐의 시간가치를 반영하지 않은 단순 비교입니다. 종전자산 27.00억원과 5.50억원은 유형별 평균이며 개별 금액은 감정평가로 확정됩니다. 상가와 다가구는 배정 평형이 정해지지 않아 순증을 산출하지 않았습니다.</p>
+    </div>
+  </details>
+</article>
+<article class="issue" id="issue-02">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">02</div>
+      <div class="issue-title">1조 6,765.2억 원은 수입과 비용의 차액입니다</div>
+      <div class="issue-status">사실 확인</div>
+    </div>
+    <p class="issue-summary">맞습니다. 사업이익은 조합 전체의 수지이지 개인에게 그대로 나눠 주는 현금이 아닙니다.</p>
+    <p class="issue-body">현행 사업이익은 16,763.5억원입니다. 개인 정산은 사업이익 → 비례율 → 개인 권리가액 → 조합원분양가 차감의 순서로 계산됩니다.</p>
+    <div class="issue-source">회의 자료 Ⅳ장 1절 p.7 · 사업수지분석 Ⅶ·Ⅷ장</div>
+  </div>
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      <h4 class="source-subhead">1. 「1조 6,763.5억원은 수입과 비용의 차액이다」 — 맞습니다</h4>
+<p class="source-p">그 지적은 정확합니다. 사업이익은 총매출에서 총사업비를 뺀 금액이며, 조합원에게 현금으로 나누어 주는 돈이 아닙니다. 사업이익은 비례율을 통해 권리가액으로 환산되고, 권리가액과 조합원분양가의 차이가 개인별 분담금 또는 환급금이 됩니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>단계</th><th>내용</th><th>금액</th></tr></thead><tbody><tr><td>① 총매출</td><td>조합원분양 + 일반분양 + 임대 + 상가</td><td>36,453.6억원</td></tr><tr><td>② 총사업비</td><td>공사비 + 공사비 외 비용 + 세금</td><td>19,690.2억원</td></tr><tr><td>③ 사업이익</td><td>① − ②</td><td>16,763.5억원</td></tr><tr><td>④ 비례율</td><td>③ ÷ 종전자산 총액 13,662.0억원</td><td>122.702%</td></tr><tr><td>⑤ 개인 권리가액</td><td>개인 종전자산 × ④</td><td>개인별</td></tr><tr><td>⑥ 분담금 / 환급금</td><td>⑤ − 조합원분양가</td><td>개인별</td></tr></tbody></table></div>
+    </div>
+  </details>
+</article>
+<article class="issue" id="issue-03">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">03</div>
+      <div class="issue-title">17.81억 환급금은 어떤 조건에서 나옵니까?</div>
+      <div class="issue-status">수치 오류</div>
+    </div>
+    <p class="issue-summary">조합원분양가 자리에 일반분양가를 넣은 계산이라는 것이 답변서의 지적입니다.</p>
+    <p class="issue-body">84형 일반분양가는 21.88억원, 현재 사업수지의 조합원분양가는 15.32억원입니다. 6.56억원 차이 때문에 반대측 계산표 네 줄이 모두 어긋났다는 설명입니다. 현행 비례율 122.702%에서 단독 권리가액 약 33.13억원 − 84형 조합원분양가 15.32억원 = 환급금 약 17.81억원입니다.</p>
+    <div class="issue-source">회의 자료 Ⅱ장 1절 p.4 · Ⅲ장 p.6 · Ⅷ장 분양가 검토</div>
+  </div>
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      <h4 class="source-subhead">1. 일반분양가와 조합원분양가를 바꿔 썼습니다</h4>
+<p class="source-p">반대측 자료의 네 번째 장은 이렇게 시작합니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>반대측 자료의 전제</th><th>가정 계산 : 감정평가액 27억, 「조합원 분양가 21.88억」</th></tr></thead></table></div>
+<h4 class="source-subhead">21.88억원은 조합원분양가가 아닙니다. 일반분양가입니다. 조합원분양가는 그 70%인 15.32억원입니다.</h4>
+<p class="source-p">그리고 이 수치는 사업수지분석 보고서에 적혀 있습니다. 찾아볼 필요조차 없었습니다. 같은 표, 같은 줄에 나란히 있습니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>사업수지분석 보고서 평형별 분양가 표 (해당 행 그대로)</th></tr></thead></table></div>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>평형</th><th>공급면적</th><th>평당 분양가</th><th>일반분양가</th><th>평당 조합원분양가</th><th>조합원분양가</th><th>차액</th></tr></thead><tbody><tr><td>84형</td><td>34.68평</td><td>6,309만원</td><td>21.88억원</td><td>4,416만원</td><td>15.32억원</td><td>6.56억원</td></tr></tbody></table></div>
+<p class="source-p">같은 보고서는 단독주택 소유자가 84형을 받을 때 환급이 발생한다는 것까지 금액으로 명시하고 있습니다. 그 표를 한 번이라도 보았다면 21.88억원을 조합원분양가로 가정할 일이 없었습니다. 보고서는 추진준비위원회 사무실에서 언제나 열람할 수 있었습니다. 읽지 않은 것입니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구분</th><th>반대측 자료가 쓴 값</th><th>실제</th><th>차이</th></tr></thead><tbody><tr><td>84형 조합원분양가</td><td>21.88억원</td><td>15.32억원</td><td>6.56억원 과대</td></tr></tbody></table></div>
+<h4 class="source-subhead">그 결과 네 번째 장의 표가 전부 틀렸습니다</h4>
+<p class="source-p">반대측 자료는 비례율을 80%·100%·120%·147%로 바꿔가며 정산 결과를 계산했습니다. 모든 행에 21.88억원을 넣었으므로, 모든 행이 정확히 6.56억원씩 틀렸습니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>가정 비례율</th><th>권리가액</th><th>반대측 자료의 정산 결과</th><th>실제 정산 결과</th><th>오차</th></tr></thead><tbody><tr><td>80%</td><td>21.60억원</td><td>추가부담 0.28억원</td><td>환급 6.28억원</td><td>6.56억원</td></tr><tr><td>100%</td><td>27.00억원</td><td>환급 5.12억원</td><td>환급 11.68억원</td><td>6.56억원</td></tr><tr><td>120%</td><td>32.40억원</td><td>환급 10.52억원</td><td>환급 17.08억원</td><td>6.56억원</td></tr><tr><td>147%</td><td>39.69억원</td><td>환급 17.81억원</td><td>환급 24.37억원</td><td>6.56억원</td></tr></tbody></table></div>
+<p class="source-p">80% 행을 보십시오. 반대측 자료는 비례율이 80%면 단독주택 소유자가 0.28억원을 더 내야 한다고 적었습니다. 실제로는 6.28억원을 돌려받습니다. 비례율이 80%까지 떨어져도 환급입니다. 정반대를 적어 놓은 것입니다.</p>
+<h4 class="source-subhead">「비례율 147%가 필요하다」는 결론도 틀렸습니다</h4>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구분</th><th>반대측 자료</th><th>실제</th><th>차이</th></tr></thead><tbody><tr><td>17.81억원 환급에 필요한 비례율</td><td>147%</td><td>122.702%</td><td>24.3%p 과다</td></tr><tr><td>84형 조합원분양가</td><td>21.88억원</td><td>15.32억원</td><td>6.56억원 과대</td></tr><tr><td>결론</td><td>비례율이 147%는 되어야 한다</td><td>현행 122.702%로 이미 성립</td><td>—</td></tr></tbody></table></div>
+<p class="source-p">권리가액 33.13억원에서 조합원분양가 15.32억원을 빼면 17.81억원입니다. 147%는 필요 없습니다. 현행 비례율로 이미 나오는 금액을 두고 24.3%p나 더 높은 비례율이 있어야 한다고 적은 것입니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>이것이 왜 중대한가</th><th>조합원분양가와 일반분양가의 구분은 재개발 사업수지의 가장 기초입니다. 조합원에게 시세보다 낮은 값으로 공급하고 그 차액을 일반분양 수익으로 메우는 것이 재개발의 작동 원리이기 때문입니다. 이 둘을 바꿔 넣으면 어떤 구역의 사업수지도 성립하지 않습니다.<br><br>반대측 자료는 각주에 「21.88억을 조합원 분양가로 가정한 예시」라고 적었습니다. 그러나 가정할 사항이 아닙니다. 조합원분양가는 이미 공개되어 있었습니다. 공개된 숫자를 두고 다른 숫자를 가정한 뒤, 그 결과를 「검증해야 할 숫자」라고 제시했습니다.<br><br>네 번째 장의 표 네 줄이 전부 틀렸고, 그 위에서 「17.81억 환급금은 어떤 조건에서 나옵니까」라는 그 장의 물음과 「147%」라는 답이 나왔습니다. 전제가 틀렸으므로 물음도 답도 성립하지 않습니다.</th></tr></thead></table></div><h3 class="source-chapter">III. 환급금 17.81억원은 어떤 조건에서 나오는가</h3>
+<p class="source-p">II장에서 본 대로, 반대측 자료는 일반분양가 21.88억원을 조합원분양가 자리에 넣었습니다. 반대측 자료 스스로 「예상 시세와 실제 조합원분양가의 구분이 핵심」이라고 적어 놓고 정작 그 구분을 하지 못한 것입니다. 구분해서 다시 계산합니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>평형</th><th>공급면적</th><th>일반분양가</th><th>조합원분양가 (70%)</th><th>차액</th></tr></thead><tbody><tr><td>39형</td><td>16.38평</td><td>12.31억원</td><td>8.62억원</td><td>3.69억</td></tr><tr><td>49형</td><td>20.32평</td><td>15.27억원</td><td>10.69억원</td><td>4.58억</td></tr><tr><td>59형</td><td>24.25평</td><td>18.23억원</td><td>12.76억원</td><td>5.47억</td></tr><tr><td>84형</td><td>34.68평</td><td>21.88억원</td><td>15.32억원</td><td>6.56억</td></tr><tr><td>99형</td><td>40.21평</td><td>24.61억원</td><td>17.23억원</td><td>7.38억</td></tr><tr><td>125형</td><td>49.80평</td><td>28.25억원</td><td>19.78억원</td><td>8.47억</td></tr></tbody></table></div>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구분</th><th>금액</th><th>산식</th></tr></thead><tbody><tr><td>단독 종전자산 평가액</td><td>27.00억원</td><td>구역 내 실거래 기준</td></tr><tr><td>비례율</td><td>122.702%</td><td>사업이익 ÷ 종전자산 총액</td></tr><tr><td>권리가액</td><td>33.13억원</td><td>27.00 × 1.22702</td></tr><tr><td>84형 조합원분양가</td><td>15.32억원</td><td>일반분양가 21.88억 × 70%</td></tr><tr><td>환급금</td><td>17.81억원</td><td>33.13 − 15.32</td></tr></tbody></table></div>
+<p class="source-p">조합원분양가 15.32억원을 넣으면 현행 비례율 122.702%에서 17.81억원이 나옵니다. 147%는 필요하지 않습니다. 조합원에게 시세보다 낮은 값으로 공급하고 그 차액을 일반분양 수익으로 메우는 것이 재개발의 기본 구조이며, 이 구조를 빼고 조합원에게 일반분양가를 매기면 사업이 성립하지 않습니다.</p>
+<p class="source-note">[가정] 조합원분양가 70%는 본 사업수지분석에 적용한 가정입니다. 법으로 정해진 비율이 아니며, 관리처분계획 수립 시 감정평가를 거쳐 조합 총회에서 확정됩니다. 실무에서 70~80% 선이 형성되는 가운데 조합원 부담이 낮은 쪽인 70%를 적용했습니다. 종전자산 27.00억원은 단독주택 유형의 평균이며 개별 금액은 감정평가로 확정됩니다.</p><h3 class="source-chapter">VIII. 분양가는 어떻게 정했는가</h3>
+<p class="source-p">고덕동 안에 있는 아파트의 실거래가와 비교합니다. 같은 동 안에서 전용면적이 같은 평형끼리 맞췄습니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>단지</th><th>준공</th><th>전용 59㎡</th><th>전용 84㎡</th></tr></thead><tbody><tr><td>고덕그라시움</td><td>2019년</td><td>21.9억원 (2026.09)</td><td>25.5억원 (2026.10)</td></tr><tr><td>래미안힐스테이트고덕</td><td>2016년</td><td>19.1억원 (2026.10)</td><td>22.1억원 (2026.10)</td></tr><tr><td>고덕아이파크</td><td>2011년</td><td>16.9억원 (2025.09)</td><td>21.0억원 (2026.10)</td></tr><tr><td>고덕1지구 — 일반분양가</td><td>2030년대</td><td>18.23억원</td><td>21.88억원</td></tr><tr><td>고덕1지구 — 조합원분양가</td><td>2030년대</td><td>12.76억원</td><td>15.32억원</td></tr></tbody></table></div>
+<p class="source-bullet">· 전용 84㎡ 일반분양가 21.88억원은 2011년에 준공한 고덕아이파크의 2026년 10월 실거래가 21.0억원보다 0.88억원(4.2%) 높은 금액입니다. 준공 15년 된 아파트보다 4.2% 높은 값으로 신축을 분양하는 것입니다.</p>
+<p class="source-bullet">· 2019년 준공한 고덕그라시움의 전용 84㎡ 25.5억원보다는 3.62억원 낮습니다. 전용 59㎡로 보면 21.9억원 대비 3.67억원 낮습니다.</p>
+<p class="source-bullet">· 입주는 2030년대입니다. 지금부터 준공까지의 시세 변동을 분양가에 반영하지 않았고, 신축 프리미엄도 0원으로 잡았습니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>분양가 조정</th><th>84형 일반분양가</th><th>비례율</th><th>의미</th></tr></thead><tbody><tr><td>현행</td><td>21.88억원</td><td>122.702%</td><td>고덕아이파크 실거래 +4.2%</td></tr><tr><td>−5%</td><td>20.79억원</td><td>111.399%</td><td>2011년 준공 아파트보다 낮음</td></tr><tr><td>−10%</td><td>19.69억원</td><td>100.097%</td><td>종전자산을 초과하는 몫이 거의 사라짐</td></tr></tbody></table></div>
+<p class="source-p">비례율 100.097%는 사업이익이 0원이라는 뜻이 아닙니다. 이 경우에도 사업이익은 약 13,675억원이며, 종전자산 총액 13,662억원을 초과하는 몫이 13억원 수준으로 줄어든다는 의미입니다. 실거래가는 국토교통부 신고 기준 해당 전용면적 최근 거래이며 괄호는 거래 연월입니다. 층과 향에 따라 같은 평형도 금액 차이가 있습니다. 고덕아이파크 전용 59㎡는 2026년 거래가 공개되지 않아 2025년 9월 거래를 적었습니다.</p>
+    </div>
+  </details>
+</article>
+
+<article class="issue" id="issue-04">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">04</div>
+      <div class="issue-title">사업비는 비교 가능한 재개발 사례 중 가장 두껍게 잡았습니다</div>
+      <div class="issue-status">네 지표 전부 1위</div>
+    </div>
+
+    <p class="issue-summary">사업비를 얇게 잡으면 비례율이 높게 나옵니다. 현재 분석은 반대로, 비교 가능한 재개발 사례 범위에서 사업비를 가장 높은 수준으로 잡았다는 것이 전단지의 핵심 주장입니다.</p>
+
+    <div class="cost-rank-grid">
+      <div class="cost-rank">
+        <small>평당 총사업비</small>
+        <span>비교 1,083~1,370만원</span>
+        <b>1,607만원</b>
+        <em>비교 가능 고시 사례 중 1위</em>
+      </div>
+      <div class="cost-rank">
+        <small>총사업비 / 직접공사비</small>
+        <span>고시 4건 1.346~1.530</span>
+        <b>1.531</b>
+        <em>비교 범위 상단 초과</em>
+      </div>
+      <div class="cost-rank">
+        <small>평당 직접공사비</small>
+        <span>비교 770~975만원</span>
+        <b>1,050만원</b>
+        <em>비교 10개 구역·평균 2개 중 1위</em>
+      </div>
+      <div class="cost-rank">
+        <small>세대당 총사업비</small>
+        <span>비교 5.31~7.00억원</span>
+        <b>7.29억원</b>
+        <em>비교 8개 구역 중 1위</em>
+      </div>
+    </div>
+
+    <div class="cost-callout">
+      <b>비교 가능한 네 지표에서 전부 1위로 잡았습니다.</b>
+      <strong>얼마나 더 높게 잡아야 만족하시겠습니까.</strong>
+    </div>
+
+    <p class="issue-body">전용 59㎡ 이하 소형이 전체 2,701세대의 75.8%라 세대당 사업비가 상대적으로 낮게 나오는 것이 일반적인데도, 현재 분석은 세대당 총사업비가 비교 범위에서 가장 높습니다. 평당 총사업비 1,607만원은 시흥1구역 약 1,370만원보다 237만원, 17.3% 높고 상도15구역 약 1,083만원보다 524만원, 48.4% 높습니다.</p>
+
+    <p class="issue-body" style="margin-top:8px">공사비 외 비용도 별도 계상했습니다. 평당 총사업비 1,607만원 중 직접공사비 가중평균은 1,050만원, 공사비 외 비용은 557만원입니다. 즉 직접공사비 100을 쓸 때 공사비 외 비용을 53.1 더 잡은 구조입니다.</p>
+
+    <div class="issue-source">회의 자료 Ⅰ장 p.2~3 · Ⅴ장 1절 p.7~8 · 전단지 상단 사업비 비교</div>
+  </div>
+
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      <!-- 비용 파트의 전단지 메시지를 먼저 재확인 -->
+      <div class="cost-detail-lead">
+        <h3>사업비 수준을 먼저 봐야 합니다</h3>
+        <p>회의자료는 비례율보다 먼저 사업비 수준을 확인해야 한다고 설명합니다. 총사업비와 직접공사비가 함께 공개된 비교 가능한 고시 사례끼리 비교하고, 공사 조건이 다른 재건축은 제외했습니다.</p>
+      </div>
+
+      <h3 class="source-chapter">I. 평당 총사업비 — 비교 가능한 재개발 사례 중 가장 높습니다</h3>
+<p class="source-p">사업비를 얇게 잡으면 비례율이 높게 나옵니다. 그래서 비례율보다 먼저 봐야 할 것이 사업비 수준입니다. 추정이나 가정을 쓰지 않고, 서울시가 고시한 다른 재개발 구역의 실제 숫자와 비교합니다.</p>
+<h4 class="source-subhead">1. 평당 총사업비</h4>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구역</th><th>자치구</th><th>고시</th><th>평당 직접공사비</th><th>총사업비/직접공사비</th><th>평당 총사업비</th></tr></thead><tbody><tr><td>고덕1지구 (본 분석)</td><td>강동</td><td>—</td><td>1,050만원</td><td>1.531</td><td>1,607만원</td></tr><tr><td>시흥1구역</td><td>금천</td><td>2024.7</td><td>972.8만원</td><td>1.408</td><td>약 1,370만원</td></tr><tr><td>상도15구역</td><td>동작</td><td>2025.4</td><td>791.7만원</td><td>1.367</td><td>약 1,083만원</td></tr></tbody></table></div>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>격차</th><th>시흥1구역 대비 평당 237만원, 17.3% 높습니다.<br>상도15구역 대비 평당 524만원, 48.4% 높습니다.<br><br>평당 총사업비를 산출할 수 있는 고시 사례는 총사업비와 직접공사비가 모두 공개된 구역뿐입니다. 그 두 구역과 비교해 고덕1지구가 가장 높습니다. 서울시 전체 재개발 구역을 전수 조사한 것이 아니라, 비교에 필요한 두 수치가 함께 공개된 구역을 모은 것입니다.</th></tr></thead></table></div>
+<h4 class="source-subhead">2. 총사업비/직접공사비 배수</h4>
+<p class="source-p">공사비 외 비용을 얼마나 두껍게 잡았는지 보여주는 지표입니다. 배수가 클수록 공사비 말고 다른 데 쓸 돈을 많이 잡아 둔 것입니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구역</th><th>자치구</th><th>고시</th><th>총사업비</th><th>직접공사비</th><th>배수</th></tr></thead><tbody><tr><td>고덕1지구 (본 분석)</td><td>강동</td><td>—</td><td>19,690.2억</td><td>12,860.5억</td><td>1.531</td></tr><tr><td>창신동 23일대</td><td>종로</td><td>2023</td><td>7,026.7억</td><td>4,593.5억</td><td>1.530</td></tr><tr><td>시흥1구역</td><td>금천</td><td>2024.7</td><td>5,780.6억</td><td>4,104.7억</td><td>1.408</td></tr><tr><td>상도15구역</td><td>동작</td><td>2025.4</td><td>15,507.5억</td><td>11,340.7억</td><td>1.367</td></tr><tr><td>숭인동 56일대</td><td>종로</td><td>2024</td><td>5,472.6억</td><td>4,065.4억</td><td>1.346</td></tr></tbody></table></div>
+<p class="source-p">고시 사례 4건의 배수는 1.346에서 1.530 사이입니다. 본 분석의 1.531은 그 범위의 상단을 넘습니다. 공사비 100원을 쓸 때 다른 데 53.1원을 더 쓰는 것으로 계상했다는 뜻입니다.</p>
+<h4 class="source-subhead">3. 평당 직접공사비</h4>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구역</th><th>평당 직접공사비</th><th>고덕1지구 대비</th><th>출처</th></tr></thead><tbody><tr><td>고덕1지구 (본 분석)</td><td>1,050만원</td><td>—</td><td>본 사업수지분석</td></tr><tr><td>전농12구역</td><td>975만원</td><td>1.08배</td><td>2026.10 입찰</td></tr><tr><td>시흥1구역</td><td>972.8만원</td><td>1.08배</td><td>2024.7 고시</td></tr><tr><td>청구역세권</td><td>950만원</td><td>1.11배</td><td>추정비례율 산출 기준</td></tr><tr><td>홍제동 9-81번지</td><td>950만원</td><td>1.11배</td><td>추정비례율 산출 기준</td></tr><tr><td>마천1 재정비촉진</td><td>931만원</td><td>1.13배</td><td>2026.10 입찰</td></tr><tr><td>신설동역세권</td><td>900.0만원</td><td>1.17배</td><td>2026.3 고시</td></tr><tr><td>2025년 서울 재개발 평균</td><td>890만원</td><td>1.18배</td><td>업계 집계</td></tr><tr><td>상도16구역</td><td>870만원</td><td>1.21배</td><td>추정비례율 산출 기준</td></tr><tr><td>서울 비강남·비한강 평균</td><td>868만원</td><td>1.21배</td><td>업계 집계</td></tr><tr><td>상도15구역</td><td>791.7만원</td><td>1.33배</td><td>2025.4 고시</td></tr><tr><td>면목7구역</td><td>770만원</td><td>1.36배</td><td>추정비례율 산출 기준</td></tr></tbody></table></div>
+<p class="source-p">비교한 재개발 10개 구역과 서울시 평균 2개를 통틀어 고덕1지구가 가장 높습니다. 가장 낮은 면목7구역의 1.36배, 서울 재개발 평균의 1.18배입니다.</p>
+<h4 class="source-subhead">4. 세대당 총사업비</h4>
+<p class="source-p">평당 금액을 산출할 수 없는 구역도 총사업비와 세대수는 공개되어 있습니다. 세대당으로 환산해 비교하면 다음과 같습니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구역</th><th>총사업비</th><th>세대수</th><th>세대당 총사업비</th></tr></thead><tbody><tr><td>고덕1지구 (본 분석)</td><td>19,690.2억원</td><td>2,701세대</td><td>7.29억원</td></tr><tr><td>돈암6구역</td><td>6,297.8억원</td><td>900세대</td><td>7.00억원</td></tr><tr><td>가리봉1구역</td><td>14,953.0억원</td><td>2,317세대</td><td>6.45억원</td></tr><tr><td>상도16구역</td><td>11,017.7억원</td><td>1,844세대</td><td>5.97억원</td></tr><tr><td>홍제동 9-81번지</td><td>14,076.1억원</td><td>2,521세대</td><td>5.58억원</td></tr><tr><td>청구역세권</td><td>1,472.0억원</td><td>264세대</td><td>5.58억원</td></tr><tr><td>대림삼거리역세권</td><td>5,047.0억원</td><td>911세대</td><td>5.54억원</td></tr><tr><td>장위13-1구역</td><td>18,400.2억원</td><td>3,464세대</td><td>5.31억원</td></tr></tbody></table></div>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>여기서 중요한 점</th><th>고덕1지구가 세대당으로도 가장 높습니다. 가장 낮은 장위13-1구역보다 37.2% 높습니다.<br><br>세대당 사업비는 큰 평형이 많을수록 올라갑니다. 그런데 고덕1지구는 전용 59㎡ 이하 소형이 2,048세대로 전체 2,701세대의 75.8%입니다. 소형 비중이 높으면 세대당 사업비가 낮게 나오는 것이 정상인데도, 소형이 가장 많으면서 세대당 사업비가 가장 높게 계상되어 있습니다.</th></tr></thead></table></div>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>정리</th><th>비교한 사례 범위에서 네 가지 지표 모두 고덕1지구가 가장 높습니다. 평당 총사업비 1위, 총사업비/직접공사비 배수 1위, 평당 직접공사비 1위, 세대당 총사업비 1위입니다.<br><br>서울시 전체 재개발 구역을 전수 조사한 것은 아닙니다. 총사업비와 직접공사비가 함께 공개되어 비교가 가능한 구역을 모은 결과입니다.<br><br>사업비를 낙관적으로 잡아 비례율을 부풀린 구조가 아니라, 비교 가능한 사례 중 가장 보수적으로 잡은 사업비 위에서 나온 비례율입니다.</th></tr></thead></table></div>
+<p class="source-p">재건축은 공사 조건이 달라 제외하고 재개발 사례만 실었습니다. 1·2절의 총사업비·직접공사비는 서울시 정비사업 고시 자료의 확정 수치이며 「고덕1지구 사업수지분석」(제출용) VI장에 수록된 것과 같습니다. 3·4절의 「입찰」은 시공자 선정 입찰 공고 기준, 「추정비례율 산출 기준」은 각 조합이 추정분담금 산출에 적용해 언론에 보도된 단가이며, 고시 확정치가 아닙니다. 성격이 다르므로 출처를 함께 적었습니다. 평당 금액은 지하층을 포함한 총연면적 기준이고, 구역마다 지하층 비중·마감 수준·기부채납 규모가 달라 단순 비교에는 한계가 있습니다. 세대당 총사업비는 평형 구성에 좌우되므로 보조 지표입니다. 본 분석의 1,607만원은 추진준비위원회 사업수지분석에 적용한 계획값이며 집행된 금액이 아닙니다.<br><br>비교 대상에서 제외한 경우가 있습니다. 총사업비에 대지비(종전자산 취득비)를 포함해 집계한 구역은 본 분석과 비용 범위가 달라 직접 비교가 되지 않으므로 넣지 않았습니다. 그런 구역은 총사업비와 배수가 구조적으로 크게 나옵니다. 같은 기준끼리만 비교했습니다.</p><h4 class="source-subhead">1. 공사비 외 비용의 항목별 내역</h4>
+<p class="source-p">평당 총사업비 1,607만원 중 공사비 외 비용은 557만원입니다. 항목별로 공개합니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>항목</th><th>금액</th><th>항목</th><th>금액</th></tr></thead><tbody><tr><td>보존등기비</td><td>470억원</td><td>철거비</td><td>343억원</td></tr><tr><td>설계비</td><td>441억원</td><td>이주보상금</td><td>350억원</td></tr><tr><td>광역교통시설부담금</td><td>129억원</td><td>각종 인입비</td><td>122억원</td></tr><tr><td>감리비</td><td>58억원</td><td>인허가·기타용역비</td><td>62억원</td></tr><tr><td>부가세(매입세액 불공제)</td><td>200억원</td><td>상하수도분담금</td><td>14억원</td></tr><tr><td>예술장식품비</td><td>11억원</td><td>학교용지부담금</td><td>매출 연동</td></tr><tr><td>금융비(PF이자·수수료)</td><td>697.5억원</td><td>분양경비</td><td>매출 연동</td></tr><tr><td>조합운영비</td><td>매출 연동</td><td>예비비</td><td>공사비 연동</td></tr><tr><td>기부채납 건축물 설치비</td><td>별도 계상</td><td>법인세</td><td>이익 연동</td></tr></tbody></table></div>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구분</th><th>평당</th><th>비중</th><th>공사비 대비</th></tr></thead><tbody><tr><td>직접공사비 — 지상</td><td>1,273만원</td><td>—</td><td>—</td></tr><tr><td>직접공사비 — 지하</td><td>750만원</td><td>—</td><td>—</td></tr><tr><td>직접공사비 가중평균</td><td>1,050만원</td><td>65.3%</td><td>100%</td></tr><tr><td>공사비 외 비용</td><td>557만원</td><td>34.7%</td><td>53.1%</td></tr><tr><td>총사업비</td><td>1,607만원</td><td>100.0%</td><td>153.1%</td></tr></tbody></table></div>
+<p class="source-p">이주비 대여이자는 0원으로 계상되어 있습니다. 시공사가 무이자 기본이주비를 제공하는 것을 전제로 한 것이며, 이는 시공사 선정 조건에 따라 확정되는 [미확정] 항목입니다. 확보하지 못하면 그만큼 사업비가 늘어납니다. 금융비는 평균 PF잔액 3,900억원 × 4.5% × 3년 + 수수료 171억원으로 산정하였습니다.</p>
+    </div>
+  </details>
+</article>
+<article class="issue" id="issue-05">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">05</div>
+      <div class="issue-title">총사업비가 10% 증가하면 어떻게 됩니까?</div>
+      <div class="issue-status">보고서 수록</div>
+    </div>
+    <p class="issue-summary">불리한 조건의 민감도도 계산돼 있다는 답변입니다.</p>
+    <p class="issue-body">공사비 +10% 시 비례율 122.702% → 113.693%, 단독 84형 환급금 17.81억 → 15.38억원. 공사비 +20% 시 비례율 104.685%, 환급금 12.95억원으로 제시돼 있습니다.</p>
+    <div class="issue-source">회의 자료 Ⅶ장 p.9</div>
+  </div>
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      <h3 class="source-chapter">VII. 수입이 줄고 비용이 늘면 어떻게 되는가</h3>
+<p class="source-p">「좋은 결과뿐 아니라 불리한 조건의 계산도 필요하다」는 지적은 타당합니다. 반대측 자료는 총수입 −10%, 총사업비 +10%를 적용해 차액이 35.0% 감소한다고 계산했습니다. 그 조건과, 공사비·분양가만 변동시킨 조건을 함께 계산했습니다. 두 조건은 적용 범위가 다르므로 구분해서 보셔야 합니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>시나리오</th><th>비례율</th><th>단독 84형 환급금</th><th>빌라 39형 분담금</th></tr></thead><tbody><tr><td>기준 (현행 제출용)</td><td>122.702%</td><td>17.81억원</td><td>+1.87억원</td></tr><tr><td>공사비 +10%</td><td>113.693%</td><td>15.38억원</td><td>+2.37억원</td></tr><tr><td>공사비 +20%</td><td>104.685%</td><td>12.95억원</td><td>+2.86억원</td></tr><tr><td>분양가 −5%</td><td>111.399%</td><td>15.53억원</td><td>+2.06억원</td></tr><tr><td>분양가 −10%</td><td>100.097%</td><td>13.24억원</td><td>+2.25억원</td></tr><tr><td>분양가 −10% &amp; 공사비 +10%</td><td>91.088%</td><td>10.81억원</td><td>+2.75억원</td></tr><tr><td>총수입 −10% &amp; 총사업비 +10%</td><td>81.606%</td><td>8.25억원</td><td>+3.27억원</td></tr></tbody></table></div>
+<p class="source-bullet">· 공사비가 20% 올라도 비례율은 104.685%로 100%를 넘습니다. 공사비 20% 상승은 평당 1,050만원이 1,260만원이 된다는 뜻이며, 2025년 서울 재개발 평균 공사비 890만원의 1.42배입니다.</p>
+    </div>
+  </details>
+</article>
+<article class="issue" id="issue-06">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">06</div>
+      <div class="issue-title">평균 15.39억 원, 평형별 수입 산출지표가 필요합니다</div>
+      <div class="issue-status">세대수 오기</div>
+    </div>
+    <p class="issue-summary">2,450세대는 현행 계획이 아니며 현재 계획은 총 2,701세대입니다.</p>
+    <p class="issue-body">현행 계획은 조합원분양 1,137 · 일반분양 1,107 · 의무임대 378 · 도정법 제54조 주택 79세대입니다. 39형 12.31억원부터 125형 28.25억원까지 평형별 분양가를 따로 산정합니다. 총수익을 단순히 세대수로 나눈 평균값을 사업수지 산정에 쓰지 않았다는 설명입니다.</p>
+    <div class="issue-source">회의 자료 Ⅱ장 2~4절 p.5~6 · Ⅴ장 2절 p.8</div>
+  </div>
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      <h4 class="source-subhead">2. 세대수를 2,450세대로 가정했습니다</h4>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구분</th><th>총수입</th><th>세대수</th><th>세대당</th></tr></thead><tbody><tr><td>반대측 자료의 계산</td><td>37,712.2억원</td><td>2,450세대 (가정)</td><td>15.39억원</td></tr><tr><td>같은 총수입 ÷ 보고서의 세대수</td><td>37,712.2억원</td><td>2,693세대</td><td>14.00억원</td></tr><tr><td>현행 계획</td><td>36,453.6억원</td><td>2,701세대</td><td>13.50억원</td></tr></tbody></table></div>
+<p class="source-p">세대수는 추정할 사항이 아닙니다. 보고서에 2,693세대로 명시되어 있습니다. 그런데 「2,400~2,500세대 범위 내 가정」이라며 2,450세대를 썼습니다. 그 결과 세대당 평균이 1.39억원, 9.9% 부풀려졌습니다. 공개된 숫자를 두고 임의로 가정한 숫자를 쓴 것입니다.</p>
+<h4 class="source-subhead">3. 현행 수치는 이렇습니다</h4>
+<p class="source-p">반대측 자료가 쓴 총수입 3조 7,712.2억원, 총사업비 2조 947.0억원, 차액 1조 6,765.2억원과 현행 수치를 나란히 놓습니다. 종전자산 재산정과 계산 오류 정정을 거쳐 아래와 같이 바뀌었습니다. 현행 수치로 다시 계산해야 합니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>항목</th><th>반대측 자료</th><th>현행 (제출용)</th><th>차이</th></tr></thead><tbody><tr><td>총매출</td><td>37,712.2억원</td><td>36,453.6억원</td><td>−1,258.6억</td></tr><tr><td>총사업비</td><td>20,947.0억원</td><td>19,690.2억원</td><td>−1,256.8억</td></tr><tr><td>사업이익</td><td>16,765.2억원</td><td>16,763.5억원</td><td>−1.7억</td></tr><tr><td>종전자산</td><td>12,154.0억원</td><td>13,662.0억원</td><td>+1,508.0억</td></tr><tr><td>비례율</td><td>137.9%</td><td>122.702%</td><td>−15.2%p</td></tr><tr><td>토지등소유자</td><td>768명</td><td>858명</td><td>+90명</td></tr><tr><td>총 세대수</td><td>2,693세대</td><td>2,701세대</td><td>+8세대</td></tr><tr><td>평당 총사업비</td><td>1,670만원</td><td>1,607만원</td><td>−63만원</td></tr></tbody></table></div>
+<h4 class="source-subhead">4. 비례율이 내려간 이유</h4>
+<p class="source-p">비례율이 137.9%에서 122.702%로 내려간 것은 사업이 나빠졌기 때문이 아닙니다. 종전자산을 실거래에 맞게 올려 잡으면서 분모가 커진 결과입니다. 소유자가 받는 금액은 오히려 늘었습니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구분</th><th>반대측 자료</th><th>현행</th><th>차이</th></tr></thead><tbody><tr><td>단독 종전자산 평가액</td><td>23.00억원</td><td>27.00억원</td><td>+4.00억</td></tr><tr><td>비례율</td><td>137.9%</td><td>122.702%</td><td>−15.2%p</td></tr><tr><td>단독 권리가액</td><td>31.72억원</td><td>33.13억원</td><td>+1.41억</td></tr><tr><td>단독 84형 환급금</td><td>16.41억원</td><td>17.81억원</td><td>+1.40억</td></tr></tbody></table></div>
+<p class="source-p">비례율 숫자만 보고 사업성을 판단하면 이런 착시에 걸립니다. 중요한 것은 비례율이 아니라 내 손에 남는 금액입니다.</p>
+<p class="source-p">종전 답변서에서 단독 권리가액을 23.00억원으로 적었던 것은 저희 오류입니다. 23.00억원은 종전자산 평가액이고, 권리가액은 여기에 비례율 137.9%를 곱한 31.72억원입니다. 위 표로 정정합니다. 실제 권리가액 개선 폭은 1.41억원입니다.</p><h4 class="source-subhead">2. 평형별 수입 산출</h4>
+<p class="source-p">「총수익을 세대수로 나눈 평균값으로는 판단할 수 없다」는 지적이 있었습니다. 맞습니다. 평형별로 분양가가 다르고 조합원분양·일반분양·임대의 단가가 각각 다릅니다. 구분해 공개합니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구분</th><th>세대수</th><th>적용 단가</th><th>매출</th></tr></thead><tbody><tr><td>조합원분양</td><td>1,137세대</td><td>일반분양가의 70%</td><td>조합원분양 매출</td></tr><tr><td>일반분양</td><td>1,107세대</td><td>39·49·59형 7,517만원/평<br>84형 6,309 · 99형 6,120 · 125형 5,673</td><td>일반분양 매출</td></tr><tr><td>의무임대</td><td>378세대</td><td>표준건축비 및 토지 감정가</td><td>임대 매출</td></tr><tr><td>도정법 제54조 임대</td><td>79세대</td><td>표준건축비 158만원/㎡</td><td>§54 임대 매출</td></tr><tr><td>상가</td><td>—</td><td>별도 산정</td><td>178.8억원</td></tr><tr><td>합계</td><td>2,701세대</td><td>—</td><td>36,453.6억원</td></tr></tbody></table></div>
+<p class="source-p">평형별 세대수와 분양가, 매출 산출 과정은 「고덕1지구 사업수지분석」(제출용) III장과 IV장에 전부 수록되어 있습니다. 단가는 모두 공급면적 기준입니다.</p>
+    </div>
+  </details>
+</article>
+
+<article class="issue" id="issue-07">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">07</div>
+      <div class="issue-title">임대수입 공백이 길어지면 부담도 커집니다</div>
+      <div class="issue-status">일부 타당 · 대응방안 있음</div>
+    </div>
+    <p class="issue-summary">임대수입 공백은 실제 부담입니다. 다만 그 부담만 떼어 볼 것이 아니라 <b>재개발 후 자산 증가</b>와, 준공 후 <b>1+1 추가주택·세대구분형을 통한 임대수입 회복·확대 가능성</b>까지 함께 봐야 합니다.</p>
+    <p class="issue-body">반대측이 제시한 월 200만원 가정을 그대로 적용하면 3~5년 공백은 7,200만원~1억2,000만원입니다. 단독 84형 대표사례의 순자산 증가 12.69억원 대비 약 5.7~9.5%입니다. 이주~입주 기간의 현금흐름 공백 자체를 없애는 것은 아니지만, 준공 후에는 1+1 추가주택이나 세대구분형(부분임대형) 선택평면을 활용해 임대 가능한 자산·공간을 늘리는 방안을 검토할 수 있습니다.</p>
+    <div class="issue-source">회의 자료 Ⅺ장 p.14~15 · Ⅵ장 1+1 추가배정 · 사업수지분석 XIII. 사업성 개선 방안</div>
+  </div>
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      
+<div class="rental-solution">
+  <h3>임대수입 공백에 대한 대응 방향</h3>
+  <p class="rental-solution-lead">이주부터 입주까지의 임대수입 공백 자체는 없어지지 않습니다. 다만 <b>재개발 후 자산 증가</b>와 <b>임대 가능한 주택·공간의 추가 확보</b>를 함께 보면, 공백 이후의 임대수입을 다시 만들고 확대할 수 있는 선택지가 생깁니다.</p>
+  <div class="rental-solution-grid">
+    <div>
+      <b>① 자산 증가로 공백 부담 흡수</b>
+      <span>반대측 가정인 월 200만원을 그대로 적용해도 3~5년 임대수입 공백은 7,200만원~1억2,000만원입니다. 단독주택 84형 대표사례의 순자산 증가 12.69억원과 비교하면 약 5.7~9.5% 수준입니다.</span>
+    </div>
+    <div>
+      <b>② 1+1로 임대 가능한 주택 수 확대</b>
+      <span>1+1 자격을 충족해 49형을 추가 배정받는 경우 환급금은 줄지만 주택 한 채를 추가로 취득합니다. 준공 이후에는 추가 주택을 직접 사용하거나 임대자산으로 활용할 수 있어 임대수입원을 늘리는 선택지가 됩니다.</span>
+    </div>
+    <div>
+      <b>③ 세대구분형(부분임대형)으로 임대공간 확보</b>
+      <span>사업수지분석은 중대형 평형에 별도 현관·욕실·부엌을 갖춘 독립공간을 두는 세대구분형 선택평면을 사업성 개선방안으로 검토합니다. 준공 후 한 세대 안에서 일부 공간을 임대할 수 있는 구조로 활용할 수 있습니다.</span>
+    </div>
+  </div>
+  <p class="rental-solution-note">※ 1+1은 개인별 종전자산 가액·주거전용면적 등 법정 요건을 충족해야 하며 실제 배정은 분양신청·관리처분계획에서 확정됩니다. 세대구분형도 현재 검토안이며, 임대수익·추가 공사비·옵션수입은 현재 사업수지에 반영하지 않았습니다. 따라서 위 내용은 <b>준공 후 임대수익 회복·확대 가능성을 설명하는 대응방안</b>이지 수익 보장이 아닙니다.</p>
+</div>
+
+      <h3 class="source-chapter">XI. 임대수입 공백과 개인이 내는 세금</h3>
+<h4 class="source-subhead">1. 임대수입 공백 — 타당한 지적입니다</h4>
+<p class="source-p">단독·다가구 소유자가 받던 임대수입은 이주 시점부터 끊기고 입주 전까지 돌아오지 않습니다. 반대측 자료는 월 200만원을 전제로 공백 기간 3~5년을 제시했습니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>공백 기간</th><th>누적 임대수입 공백</th><th>단독 84형 순증 12.69억원 대비</th></tr></thead><tbody><tr><td>36개월 (3년)</td><td>7,200만원</td><td>5.7%</td></tr><tr><td>48개월 (4년)</td><td>9,600만원</td><td>7.6%</td></tr><tr><td>60개월 (5년)</td><td>1억 2,000만원</td><td>9.5%</td></tr><tr><td>96개월 (8년) — 과대 가정</td><td>1억 9,200만원</td><td>15.1%</td></tr></tbody></table></div>
+<p class="source-p">반대측 자료의 최대치인 5년을 적용하면 1억 2,000만원이고, 사업 전 기간을 공백으로 보는 과대한 가정을 써도 1억 9,200만원입니다. 부담이 없다는 뜻이 아니라, 자산 변동과 함께 놓고 보아야 한다는 뜻입니다.</p>
+<p class="source-note">[가정] 월 임대수입 200만원은 반대측 자료의 전제를 그대로 가져온 것입니다. 구역 내 개별 소유자의 실제 임대수입 자료는 추진준비위원회가 보유하고 있지 않습니다. 위 비교는 개인이 내는 세금, 금융비용, 화폐의 시간가치를 반영하지 않은 단순 비교이며, 실제 결과는 개인별 조건에 따라 달라집니다.</p>
+<h4 class="source-subhead">2. 개인이 내는 세금 — 환급금에도 양도소득세가 발생할 수 있습니다</h4>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>함께 보셔야 합니다</th><th>환급금을 받으시는 경우에는 세금이 따라옵니다. 관리처분계획에 따라 청산금을 지급받으면, 종전 부동산 중 그 청산금에 해당하는 부분을 양도한 것으로 보아 양도소득세가 과세될 수 있습니다. 양도시기는 소유권 이전 고시일의 다음 날이며, 그 달의 말일부터 2개월 이내에 신고·납부해야 합니다.<br><br>1세대 1주택 비과세 요건을 충족하면 비과세될 수 있으나, 보유 기간과 다른 주택 보유 여부에 따라 달라집니다. 환급금 규모가 큰 단독주택·상가·다가구 소유자에게 특히 중요한 사항입니다.</th></tr></thead></table></div>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>세목</th><th>부담 시점</th><th>사업수지 반영</th></tr></thead><tbody><tr><td>양도소득세 (청산금 수령분)</td><td>소유권 이전 고시일의 다음 날</td><td>미반영 — 개인 부담</td></tr><tr><td>취득세 (새 아파트)</td><td>입주 시</td><td>미반영 — 개인 부담</td></tr><tr><td>재산세·종합부동산세</td><td>보유 기간</td><td>미반영 — 개인 부담</td></tr><tr><td>양도소득세 (주택 매도 시)</td><td>매도 시</td><td>미반영 — 개인 부담</td></tr><tr><td>법인세 (조합)</td><td>청산 시</td><td>반영</td></tr><tr><td>부가가치세</td><td>사업 기간</td><td>반영</td></tr></tbody></table></div>
+<p class="source-p">환급금 17.81억원은 세전 금액입니다. 실제로 손에 남는 금액은 취득 시기, 보유 기간, 1세대 1주택 여부, 다른 주택 보유 여부에 따라 달라지므로 추진준비위원회가 일률적으로 계산해 드릴 수 없습니다. 환급금 규모가 큰 소유자는 세무 전문가의 개별 상담이 필요합니다.</p>
+<h4 class="source-subhead">3. 영업 중단과 주거 이전</h4>
+<p class="source-p">상가를 운영하는 소유자는 이주 시점부터 영업을 중단해야 하고, 같은 자리로 돌아오기까지 수년이 걸립니다. 거주자는 이주 기간 동안 다른 곳에 살 집을 구해야 합니다. 생활의 연속성이 끊어지는 부담이며 보상으로 전부 메워지는 성격의 것도 아닙니다. 이 부담이 없다고 말하지 않겠습니다.</p>
+<p class="source-p">제도상으로는 주거이전비, 이사비, 영업손실보상이 법령에 따라 지급됩니다. 영업손실보상은 휴업 기간에 대한 보상이며, 영업을 폐지하는 경우와 휴업 후 재개하는 경우의 산정 방식이 다릅니다. 금액은 사업시행계획인가 이후 감정평가를 거쳐 확정됩니다.</p>
+    </div>
+  </details>
+</article>
+<article class="issue" id="issue-08">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">08</div>
+      <div class="issue-title">1+1 추가 160세대 가정, 비용과 배정 조건은?</div>
+      <div class="issue-status">반영 완료</div>
+    </div>
+    <p class="issue-summary">매출에도 비용에도 반영돼 있다는 답변입니다.</p>
+    <p class="issue-body">49형 160세대 × 조합원분양가 10.69억원 = 1,710.4억원이 조합원분양 매출에 포함돼 있고 관련 공사비·부대비도 총사업비에 포함됩니다. 추가 주택은 전용 60㎡ 이하 등 법정 요건이 있으며 이전고시 다음 날부터 3년간 전매가 제한됩니다.</p>
+    <div class="issue-source">회의 자료 Ⅵ장 p.8~9</div>
+  </div>
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      <h3 class="source-chapter">VI. 1+1 추가배정 160세대의 비용과 배정 조건</h3>
+<p class="source-p">반대측 자료는 「1+1 추가 160세대의 추가 주택 가격과 금융·세금 부담, 일반분양 물량과 전체 사업수지에 미치는 영향이 검증되지 않았다」고 지적했습니다. 반영 여부가 아니라 영향을 물은 것이므로, 그 내역을 공개합니다.</p>
+<h4 class="source-subhead">1. 사업수지에 어떻게 들어가 있는가</h4>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>물량</td><td>49형 160세대</td></tr><tr><td>매출 반영</td><td>조합원분양 매출에 160세대 × 49형 조합원분양가 10.69억원 = 1,710.4억원 포함</td></tr><tr><td>비용 반영</td><td>해당 연면적(160세대 × 20.32평)의 공사비·공사비 외 비용이 총사업비에 포함</td></tr><tr><td>일반분양 영향</td><td>조합원 배정이 늘어난 만큼 일반분양 물량이 줄어듦. 현행 일반분양 1,107세대는 그 차감 후 수치</td></tr><tr><td>전체 세대수</td><td>2,701세대 중 조합원분양 1,137세대에 포함</td></tr></tbody></table></div>
+<h4 class="source-subhead">2. 추가배정을 받으면 개인에게 무슨 일이 생기는가</h4>
+<p class="source-p">1+1은 공짜로 한 채를 더 받는 제도가 아닙니다. 두 번째 주택의 조합원분양가를 권리가액에서 차감합니다. 따라서 환급금이 그만큼 줄어듭니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구분</th><th>99형 1채만 받는 경우</th><th>99형 + 49형을 받는 경우</th><th>차이</th></tr></thead><tbody><tr><td>권리가액</td><td>33.13억원</td><td>33.13억원</td><td>—</td></tr><tr><td>조합원분양가 합계</td><td>17.23억원</td><td>17.23 + 10.69 = 27.92억원</td><td>+10.69억원</td></tr><tr><td>환급금</td><td>15.90억원</td><td>5.21억원</td><td>−10.69억원</td></tr><tr><td>취득하는 주택</td><td>99형 1채</td><td>99형 1채 + 49형 1채</td><td>49형 1채</td></tr></tbody></table></div>
+<p class="source-bullet">· 추가배정을 받으면 환급금이 그 주택의 조합원분양가만큼 줄어듭니다. 49형이면 10.69억원입니다. 그 대신 49형 한 채(일반분양가 기준 15.27억원)를 취득합니다. 84형 1채(환급 17.81억원)와 비교한 12.60억원 차이에는 평형을 84형에서 99형으로 바꾼 효과 1.91억원이 함께 섞여 있으므로, 추가배정만의 효과는 10.69억원입니다.</p>
+<p class="source-bullet">· 두 번째 주택에도 취득세가 발생합니다. 다주택 보유에 따른 보유세와 양도 시 과세 문제도 개인별로 달라집니다. 이는 조합의 사업수지에 들어가지 않는 개인 부담이며, XI장에서 함께 다룹니다.</p>
+<p class="source-bullet">· 도정법상 1+1 분양은 종전자산 가액 또는 종전 주거전용면적 범위 안에서만 가능하고, 추가로 받는 주택은 주거전용 60㎡ 이하여야 합니다. 49형은 60㎡ 이하 요건에 해당합니다. 다만 위 예시의 조합원분양가 합계 27.92억원은 종전자산 평가액 27.00억원을 넘으므로, 가액 기준으로는 충족하지 못하고 종전 주거전용면적 기준을 충족해야 가능합니다. 개인별로 확인이 필요한 사항입니다.</p>
+<p class="source-bullet">· 이전고시 다음 날부터 3년간 추가 주택의 전매가 제한됩니다.</p>
+<p class="source-note">[가정] 160세대는 사업수지분석에 적용한 계획값입니다. 실제 1+1 배정 세대수는 신청자 수, 개인별 권리가액, 관리처분계획에 따라 확정되며 160세대와 달라질 수 있습니다. 신청자가 적으면 그만큼 일반분양 물량이 늘어 사업이익이 증가하고, 많으면 반대가 됩니다.</p>
+    </div>
+  </details>
+</article>
+<article class="issue" id="issue-09">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">09</div>
+      <div class="issue-title">25% 이상 반대에 따른 제외 이력이 있습니다</div>
+      <div class="issue-status">제한 사유 아님</div>
+    </div>
+    <p class="issue-summary">과거 반대 이력과 현재의 추진 가능 여부는 별개의 문제라는 답변입니다.</p>
+    <p class="issue-body">현재는 신속통합기획 주택재개발 후보지 절차를 밟고 있고 동의서는 자치구에서 연번을 부여받아 새로 징구한다는 설명입니다. 과거 동의서의 효력과 현재 동의 요건은 별개의 사안이라는 입장입니다.</p>
+    <div class="issue-source">회의 자료 ⅩⅣ장 p.17~18</div>
+  </div>
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      <h3 class="source-chapter">XIV. 반대 이력에 대하여</h3>
+<p class="source-p">반대측 자료는 2024년 12월 5일 안내문에 기재된 당시 반대동의서 비율을 들어, 후보지 신청 제외와 기존 동의서 효력 상실의 경위를 설명해야 한다고 했습니다. 설명은 드립니다. 다만 그 사실이 가리키는 결론은 반대측 자료가 말하는 것과 다릅니다.</p>
+<p class="source-p">반대 이력이 있다는 사실과, 그래서 다시 추진하면 안 된다는 주장은 전혀 다른 것입니다. 한 번 반대가 많아 무산되었다가 다시 추진하여 정비구역으로 지정되고 사업을 진행하는 구역은 얼마든지 있습니다. 반대 이력은 그 지역이 영영 재개발을 할 수 없다는 뜻이 아니라, 그 시점의 여건과 설명이 부족했다는 뜻입니다. 추진 여부를 결정하는 것은 과거의 반대 비율이 아니라 현재의 동의 요건입니다.</p>
+<p class="source-p">현재 절차는 이렇습니다. 신속통합기획 주택재개발 후보지 공모 절차를 밟고 있으며, 동의서는 자치구로부터 연번을 부여받아 새로 징구합니다. 과거에 제출된 동의서의 효력 문제와 현재의 동의 요건은 별개의 사안입니다. 과거 경위와 현재 절차에 대한 설명을 요구하신다면 추진준비위원회는 언제든 자료로 제공하겠습니다. 다만 그것은 설명의 문제이지, 사업을 추진할 수 있는지 여부의 문제가 아닙니다.</p>
+<p class="source-note">※ 재추진하여 정비구역으로 지정된 구체적 사례는 요청하시면 서울시 고시 자료로 정리하여 제시하겠습니다. 본 장에서는 사례명을 적시하지 않았습니다.</p>
+    </div>
+  </details>
+</article>
+<article class="issue" id="issue-10">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">10</div>
+      <div class="issue-title">새 아파트에 다시 살 수 있는가</div>
+      <div class="issue-status">쟁점 분리 필요</div>
+    </div>
+    <p class="issue-summary">물량과 부담, 그리고 분양대상자 자격은 서로 다른 질문입니다.</p>
+    <p class="issue-body">국공유지를 제외한 사유지는 92,659.4㎡이고 토지등소유자 858명 기준 1인당 107.99㎡입니다. 총 2,701세대 계획으로 소유자 1인당 3.15세대에 해당합니다. 다만 물량이 충분한 것과 모든 소유자가 자동으로 분양대상자가 되는 것은 다르며, 개인별 분담금·이주비·권리산정기준일 등은 별도 확인사항입니다.</p>
+    <div class="issue-source">회의 자료 Ⅸ장 p.11~13 · Ⅹ장 p.13~14</div>
+  </div>
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      <h3 class="source-chapter">IX. 「새 아파트에 다시 살 수 있는가」 — 주민을 기만하는 물음입니다</h3>
+<p class="source-p">이 물음은 주택이 모자랄 수 있다는 인상을 줍니다. 그러나 땅의 면적만 계산해 보아도 그런 상황은 일어날 수 없습니다. 계산은 초등학교 산수 수준입니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구분</th><th>면적</th><th>산출</th></tr></thead><tbody><tr><td>구역면적</td><td>125,630.60㎡</td><td>정비구역 전체</td></tr><tr><td>국공유지</td><td>32,971.20㎡</td><td>도로 9필지 25,054.6 + 공원 2필지 7,916.6</td></tr><tr><td>사유지</td><td>92,659.40㎡</td><td>구역면적 − 국공유지</td></tr><tr><td>토지등소유자</td><td>858명</td><td>신축 허가분 완공 전제</td></tr><tr><td>1인당 사유지</td><td>107.99㎡</td><td>92,659.40 ÷ 858</td></tr></tbody></table></div>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>1인당 108㎡가 무슨 뜻인가</th><th>국공유지를 전부 빼고도 토지등소유자 한 사람이 가진 땅이 평균 107.99㎡, 32.67평입니다.<br><br>그 땅 위에 들어서는 지상 연면적은 231,999.5㎡입니다. 건축대지(획지) 87,739.0㎡에 적용 용적률 264.42%를 곱한 값입니다. 이를 858명으로 나누면 1인당 270.4㎡, 81.8평입니다. 전용 84㎡형의 공급면적이 34.68평이므로 1인당 2.36세대분에 해당합니다.<br><br>실제 계획은 총 2,701세대로, 토지등소유자 858명의 3.15배입니다. 조합원에게 1차로 배정되는 물량만 857세대로, 민간 소유자 857명과 정확히 같습니다.</th></tr></thead></table></div>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구분</th><th>세대수</th><th>내용</th></tr></thead><tbody><tr><td>조합원 1차 배정</td><td>857세대</td><td>민간 토지등소유자 857명에 1인 1세대</td></tr><tr><td>SH 매입분</td><td>120세대</td><td>공공이 매입하는 물량</td></tr><tr><td>1+1 추가배정</td><td>160세대</td><td>종전자산이 큰 소유자의 두 번째 주택</td></tr><tr><td>소계 — 조합원분양</td><td>1,137세대</td><td>위 세 가지의 합</td></tr><tr><td>일반분양</td><td>1,107세대</td><td>—</td></tr><tr><td>의무임대</td><td>378세대</td><td>법정 비율</td></tr><tr><td>도정법 제54조 초과용적률분</td><td>79세대</td><td>국민주택규모</td></tr><tr><td>합계</td><td>2,701세대</td><td>소유자 1인당 3.15세대</td></tr></tbody></table></div>
+<h4 class="source-subhead">토지등소유자 858명과 조합원 1차 배정 857세대의 차이</h4>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구분</th><th>인원</th><th>비고</th></tr></thead><tbody><tr><td>단독주택</td><td>185명</td><td>—</td></tr><tr><td>빌라(공동주택)</td><td>542명</td><td>—</td></tr><tr><td>상가</td><td>120명</td><td>필지 수는 128필지</td></tr><tr><td>다가구</td><td>10명</td><td>—</td></tr><tr><td>민간 소유자 소계</td><td>857명</td><td>조합원 1차 배정 857세대가 이에 대응</td></tr><tr><td>SH공사</td><td>1명</td><td>공공이 보유한 토지의 소유자</td></tr><tr><td>토지등소유자 합계</td><td>858명</td><td>—</td></tr></tbody></table></div>
+<p class="source-p">858명과 857세대의 1 차이는 토지등소유자에 SH공사가 1명 포함되어 있기 때문입니다. 민간 소유자는 857명이고, 조합원 1차 배정 857세대가 그에 대응합니다.</p>
+<p class="source-note">[확인필요] 위 유형별 구성은 추진준비위원회 실사 집계입니다. 필지 데이터(419필지)상 토지이용이 「단독」으로 분류된 필지는 173개로 12필지 차이가 있고, 상가는 128필지에 소유자 120명으로 필지 수와 소유자 수가 다릅니다. 유형별 소유자 수와 중복 소유 현황은 조합 설립 과정의 실사로 확정됩니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>분명히 말씀드립니다</th><th>1인당 108㎡의 땅을 내놓고 용적률 264.42%로 2,701세대를 짓습니다. 소유자 1인당 3.15세대입니다. 조합원에게 1차로 배정되는 물량만 857세대로 민간 소유자 857명과 정확히 일대일입니다.<br><br>물량이 모자라 집을 못 받는 상황은 산술적으로 불가능합니다. 이 숫자는 공개된 자료에 전부 나와 있고 누구나 확인할 수 있습니다.<br><br>그럼에도 「새 아파트에 다시 살 수 있는가」라고 묻는 것은, 확인하지 않고 물었거나 알면서 물은 것입니다. 어느 쪽이든 주민에게 근거 없는 불안을 심는 행위입니다. 검증을 요구하는 자료가 정작 자기 물음은 검증하지 않았습니다.</th></tr></thead></table></div>
+<h4 class="source-subhead">다른 구역들은 땅이 이보다 훨씬 좁습니다</h4>
+<p class="source-p">고덕1지구가 유별나게 땅이 넓어서 가능한 일이 아닙니다. 1인당 면적이 고덕1지구의 절반도 되지 않는 구역들도 조합원 전원이 아파트를 분양받습니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>구역</th><th>구역면적</th><th>기준 인원·세대</th><th>1인(세대)당 면적</th><th>건립 세대</th></tr></thead><tbody><tr><td>고덕1지구</td><td>125,630.6㎡</td><td>토지등소유자 858명</td><td>146.4㎡</td><td>2,701세대</td></tr><tr><td>성수전략정비 제2지구</td><td>131,980.0㎡</td><td>토지등소유자 1,092명</td><td>120.9㎡</td><td>—</td></tr><tr><td>이문1구역</td><td>약 145,000㎡</td><td>토지등소유자 1,759명</td><td>82.4㎡</td><td>3,069세대</td></tr><tr><td>청구역세권</td><td>4,928.5㎡</td><td>현황 46세대</td><td>107.1㎡</td><td>264세대</td></tr><tr><td>가리봉1구역</td><td>83,692.4㎡</td><td>현황 1,369세대</td><td>61.1㎡</td><td>2,317세대</td></tr><tr><td>상도16구역</td><td>88,596.3㎡</td><td>현황 1,821세대</td><td>48.7㎡</td><td>1,844세대</td></tr><tr><td>장위13-1구역</td><td>138,435.9㎡</td><td>현황 3,530세대</td><td>39.2㎡</td><td>3,464세대</td></tr></tbody></table></div>
+<p class="source-p">장위13-1구역은 1인당 39.2㎡, 상도16구역은 48.7㎡, 가리봉1구역은 61.1㎡입니다. 고덕1지구의 3분의 1에서 절반 수준입니다. 그런 구역들도 조합원 전원이 분양받습니다. 1인당 146.4㎡, 국공유지를 전부 빼도 108.0㎡인 고덕1지구에서 집이 모자랄 것을 걱정하라는 것은 말이 되지 않습니다.</p>
+<p class="source-p">비교 수치는 서울시 정비사업 공개자료와 각 구역의 추정분담금 보도자료에 공개된 구역면적·토지등소유자 수·현황 세대수입니다. 「현황 세대」는 토지등소유자 수가 공개되지 않은 구역에 대해 현재 세대수를 대신 쓴 것으로, 실제 소유자 수는 이보다 적은 것이 일반적이므로 1인당 면적은 표의 수치보다 넓습니다. 고덕1지구의 146.4㎡는 다른 구역과 같은 기준인 구역면적 기준이며, 국공유지를 제외한 사유지 기준은 107.99㎡입니다.</p>
+<h4 class="source-subhead">84형이 모자라 보이십니까 — 평형 구성은 조정할 수 있습니다</h4>
+<p class="source-p">현재 계획은 분양주택 2,244세대 가운데 84형 481세대, 99형 101세대, 125형 71세대입니다. 이 구성은 확정된 것이 아닙니다. 평형별 세대수는 조합원 분양신청 결과를 보고 관리처분계획 단계에서 확정됩니다. 84형 수요가 많으면 그만큼 늘릴 수 있습니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>핵심은 매출이 세대수로 정해지지 않는다는 것입니다</th><th>분양 매출은 「세대수 × 얼마」가 아니라 「분양 면적 × 평당가」로 정해집니다. 평형을 키우면 같은 면적에서 세대수는 줄지만, 분양할 면적 자체는 그대로입니다.<br><br>따라서 평형을 키울 때 매출에 생기는 변화는 평형별 평당가 차이에 국한됩니다. 소형은 평당 7,517만원, 84형은 6,309만원이므로 그 차이만큼만 움직입니다.</th></tr></thead></table></div>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>전환 규모</th><th>84형 증가</th><th>총 세대수 변화</th><th>비례율 변화</th></tr></thead><tbody><tr><td>59형 100세대분 면적</td><td>+70세대</td><td>−30세대</td><td>−1.50%p</td></tr><tr><td>59형 200세대분 면적</td><td>+140세대</td><td>−60세대</td><td>−3.00%p</td></tr><tr><td>59형 300세대분 면적</td><td>+210세대</td><td>−90세대</td><td>−4.50%p</td></tr></tbody></table></div>
+<p class="source-p">59형 100세대분의 면적을 84형으로 돌리면 84형이 70세대 늘고 전체 세대수는 30세대 줄지만, 비례율은 1.50%p 내려갈 뿐입니다. 300세대분을 돌려 84형을 210세대 늘려도 비례율은 118.20% 수준으로 100%를 크게 웃돕니다.</p>
+<p class="source-p">정리하면, 84형이 부족해 보인다는 것은 사업의 한계가 아니라 조정 가능한 계획값입니다. 그리고 조정해도 사업성에 큰 영향이 없습니다. 이 역시 걱정할 사항이 아닙니다.</p>
+<p class="source-note">[가정] 위 전환 계산은 조합원분양 물량을 59형에서 84형으로 바꾸고 분양 연면적은 그대로 두었을 때의 매출 변화만 반영한 개략치입니다. 전용 60㎡ 이하 소형 공급 비율에 따른 기준용적률 완화 요건, 임대주택 평형 구성, 설계 변경에 따른 공사비 변동은 반영하지 않았습니다. 실제 평형 구성은 조합원 분양신청 결과와 관리처분계획에서 확정됩니다.</p>
+<p class="source-p">물어야 할 것은 「받을 수 있는가」가 아니라 「얼마를 내고 받는가」입니다. 그 답은 다음 장에 있습니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>다만 정확히 말씀드릴 것</th><th>물량이 충분하다는 것과 모든 소유자가 자동으로 분양대상자가 된다는 것은 다릅니다.<br><br>분양대상자 자격은 「도시 및 주거환경정비법」과 서울특별시 조례가 정합니다. 권리산정기준일, 공유 지분의 분할 시점, 과소토지 여부 등에 따라 분양대상에서 제외되고 현금청산 대상이 되는 경우가 있습니다. 이는 물량 부족과는 다른 문제이며 개인별로 확인이 필요합니다.<br><br>평형 배정도 권리가액 순위에 따릅니다. 희망 평형에 신청이 몰리면 권리가액이 낮은 쪽은 다른 평형으로 조정됩니다.<br><br>정리하면 두 가지는 다른 문제입니다. 물량이 모자라서 배정받지 못하는 경우는 발생하지 않습니다. 그러나 분양대상자 자격을 갖추지 못하면 물량과 무관하게 현금청산 대상이 될 수 있습니다.</th></tr></thead></table></div>
+<p class="source-note">[가정] 토지등소유자 858명은 구역 내 단독주택 10필지에 난 다세대주택 100세대 건축허가가 모두 완공되는 것을 전제로 반영한 계획값입니다. 현재 실제 소유자 수는 768명과 858명 사이입니다. 국공유지 면적은 구역 내 도로 9필지와 공원 2필지의 합계이며, 1인당 사유지 면적은 평균값으로 개별 소유자의 실제 면적은 이와 다릅니다. 지상 연면적 231,999.5㎡는 획지면적 87,739.0㎡에 적용 용적률 264.42%를 곱한 값입니다.</p>
+<h3 class="source-chapter">X. 추가분담금과 이주비를 감당할 수 있는가</h3>
+<p class="source-p">이것이 실제로 물어야 할 질문입니다. 유형별로 전혀 다릅니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>소유 유형</th><th>권리가액</th><th>선택 평형</th><th>조합원분양가</th><th>분담금(+) / 환급(−)</th></tr></thead><tbody><tr><td>빌라</td><td>6.75억원</td><td>39형</td><td>8.62억원</td><td>+1.87억원</td></tr><tr><td>빌라</td><td>6.75억원</td><td>49형</td><td>10.69억원</td><td>+3.94억원</td></tr><tr><td>빌라</td><td>6.75억원</td><td>59형</td><td>12.76억원</td><td>+6.01억원</td></tr><tr><td>단독</td><td>33.13억원</td><td>84형</td><td>15.32억원</td><td>−17.81억원 (환급)</td></tr><tr><td>단독</td><td>33.13억원</td><td>99형</td><td>17.23억원</td><td>−15.90억원 (환급)</td></tr><tr><td>단독</td><td>33.13억원</td><td>125형</td><td>19.78억원</td><td>−13.35억원 (환급)</td></tr><tr><td>상가</td><td>45.40억원</td><td>미정</td><td>—</td><td>권리가액이 분양가를 넘는 범위에서 환급</td></tr><tr><td>다가구</td><td>46.63억원</td><td>미정</td><td>—</td><td>권리가액이 분양가를 넘는 범위에서 환급</td></tr></tbody></table></div>
+<p class="source-bullet">· 분담금이 발생하는 쪽은 빌라 소유자입니다. 39형을 선택하면 1.87억원, 59형을 선택하면 6.01억원으로 평형 선택에 따라 세 배 넘게 차이가 납니다.</p>
+<p class="source-bullet">· 단독 소유자는 분담금이 아니라 환급금을 받습니다. 다만 환급금의 지급 시기는 관리처분계획과 조합의 자금 사정에 따라 정해지며, 통상 이전고시 이후입니다. 이주 시점에 바로 받는 돈이 아닙니다.</p>
+<p class="source-bullet">· 상가와 다가구는 배정 평형이 정해지지 않아 금액을 산출하지 않았습니다. 권리가액이 조합원분양가를 넘는 범위에서 환급이 발생하는 구조이며, 구체적 금액은 평형 배정 이후 확정됩니다.</p>
+<h4 class="source-subhead">이주비에 대하여</h4>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>정확히 말씀드립니다</th><th>본 사업수지분석은 시공사가 무이자 기본이주비를 제공하는 것을 전제로 이주비 대여이자를 0원으로 계상했습니다. 이는 시공사 선정 조건에 따라 확정되는 [미확정] 사항이며, 확보하지 못하면 그만큼 사업비가 늘어납니다.<br><br>또한 이주 기간의 임시 거주비는 사업수지에 포함되어 있지 않습니다. 주거이전비와 이사비는 법령에 따라 지급되지만 금액은 사업시행계획인가 이후 감정평가로 확정됩니다.<br><br>종전 답변서에서 「이주비 금융비용이 총사업비에 이미 계상되어 있다」고 적은 것은 잘못이므로 위와 같이 정정합니다.</th></tr></thead></table></div>
+<p class="source-p">권리가액은 유형별 평균값이며 개별 소유자의 권리가액은 감정평가에 따라 달라집니다. 위 금액은 현행 비례율 122.702%와 조합원분양가 70% 가정에 기초한 계획값이고, 관리처분계획 수립 단계에서 확정됩니다.</p>
+    </div>
+  </details>
+</article>
+<article class="issue" id="issue-11">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">11</div>
+      <div class="issue-title">휴먼타운 2.0 적용 검토를 공식 건의합니다</div>
+      <div class="issue-status">적용 대상 검토</div>
+    </div>
+    <p class="issue-summary">회의자료는 재개발과 휴먼타운 2.0의 사업 구조가 다르다는 점을 비교합니다.</p>
+    <p class="issue-body">휴먼타운 2.0은 개별 필지 신축을 지원하는 제도이고, 재개발은 구역 전체를 묶어 공동주택과 기반시설을 정비하는 방식입니다. 회의자료는 용적률, 사업주체, 자금조달, 개발이익 귀속, 기반시설 측면을 표로 비교합니다. 법률상 정비구역이 특별건축구역 지정 제외대상이라는 뜻은 아니며 실제 적용 가능 여부는 서울시·강동구 확인이 필요하다고 적었습니다.</p>
+    <div class="issue-source">회의 자료 Ⅻ장 p.15~17</div>
+  </div>
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      <h3 class="source-chapter">XII. 휴먼타운 2.0 적용 검토 건의에 대하여</h3>
+<p class="source-p">「고덕1지구에 맞는 비용·편익 비교가 먼저」라는 지적에 동의합니다. 먼저 제도 내용을 정확히 정리합니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>항목</th><th>내용</th></tr></thead><tbody><tr><td>법적 근거</td><td>「건축법」 제69조 특별건축구역</td></tr><tr><td>용적률</td><td>디자인 가이드라인 평가 점수에 따라 조례 용적률의 1.1~1.2배<br>(제2종 일반주거 200% → 220~240%)</td></tr><tr><td>완화 항목</td><td>용적률, 건폐율, 높이, 대지 안의 공지, 조경</td></tr><tr><td>사업 주체</td><td>개별 건축주. 특례적용계획서를 첨부해 건축허가 신청</td></tr><tr><td>공사비</td><td>건축주 부담. 건설자금 대출이자 지원(이차보전) 제도 있음</td></tr><tr><td>착공 의무</td><td>허가·신고 후 12개월 이내</td></tr><tr><td>구역 존속</td><td>특별건축구역 지정 후 3년 운영, 성과 평가 후 존속 여부 결정</td></tr><tr><td>지정 현황</td><td>대상지 13곳 중 2026년 10월 1일 기준 특별건축구역<br>지정 완료 5곳, 10월 13일 7곳 심의 통과. 서울시가 선정·지정</td></tr></tbody></table></div>
+<h4 class="source-subhead">1. 고덕1구역이 대상이 될 수 있는가</h4>
+<p class="source-bullet">· 「건축법」 제69조 제2항이 정한 지정 제외 지역은 개발제한구역, 자연공원, 접도구역, 보전산지 네 가지입니다. 정비구역은 법률상 제외 대상이 아닙니다. 따라서 법으로 금지된 것은 아닙니다.</p>
+<p class="source-bullet">· 휴먼타운 2.0 자체의 공식 선정기준은 공개된 자료에서 확인되지 않습니다. 대상지 13곳은 모두 필지가 작고 골목이 좁아 현행 기준으로 신축이 어려운 구도심입니다. 고덕1구역은 1983년 택지개발사업으로 조성되어 도로와 공원이 계획적으로 갖춰진 평지입니다.</p>
+<p class="source-bullet">· 서울시는 대규모 주택공급이 필요한 지역에는 신속통합기획과 모아타운을, 역사·경관 보존이 필요한 저층주거지에는 휴먼타운 2.0을 적용한다고 밝히고 있습니다.</p>
+<h4 class="source-subhead">2. 두 방식의 차이</h4>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>비교 기준</th><th>재개발</th><th>휴먼타운 2.0</th></tr></thead><tbody><tr><td>정비 방식</td><td>구역 단위 종합 정비</td><td>개별·인접 필지 정비</td></tr><tr><td>용적률</td><td>264.42% (구역 전체)</td><td>220~240% (개별 필지)</td></tr><tr><td>집을 짓는 사람</td><td>조합 (시공사 도급)</td><td>개별 건축주</td></tr><tr><td>자금 조달</td><td>총사업비에서 집행</td><td>건축주 부담 (이차보전 지원 있음)</td></tr><tr><td>개발이익 귀속</td><td>일반분양 수익을 조합원에게 배분</td><td>개별 건축주에게 귀속</td></tr><tr><td>세대수</td><td>2,701세대</td><td>개별 필지 범위 내</td></tr><tr><td>기반시설</td><td>구역 단위 재편</td><td>기존 유지</td></tr></tbody></table></div>
+<p class="source-p">두 방식은 성격이 다릅니다. 재개발은 구역 전체를 묶어 공동주택을 공급하고 일반분양 수익을 조합원에게 배분합니다. 휴먼타운 2.0은 개별 필지의 신축을 지원하는 제도이고, 일반분양 수익을 배분하는 구조 자체가 없습니다. 집은 건축주가 자기 돈으로 짓고, 팔면 자기가 가져갑니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>고덕1구역에 맞지 않는 이유</th><th>첫째, 대상이 아닙니다. 휴먼타운 2.0은 필지가 작고 골목이 좁아 현행 기준으로는 신축조차 어려운 구도심을 위한 제도입니다. 대상지 13곳이 전부 그런 곳입니다. 고덕1구역은 1983년 택지개발사업으로 조성되어 도로와 공원이 계획적으로 갖춰진 평지입니다. 이 제도가 풀려는 문제가 여기에는 없습니다.<br><br>둘째, 용적률이 낮습니다. 평가 점수에 따라 220~240%이고 그것도 개별 필지에 적용됩니다. 재개발은 구역 전체에 264.42%입니다.<br><br>셋째, 돈을 각자 냅니다. 단독주택 한 채를 신축하는 비용을 개인이 전액 조달하는 것과, 분담금 없이 권리가액으로 새 아파트를 받고 17.81억원을 환급받는 것은 비교 대상이 아닙니다. 허가 후 12개월 안에 착공해야 하고, 특별건축구역은 3년 뒤 존속 여부를 다시 평가합니다.<br><br>넷째, 서울시가 용도를 갈라 놓았습니다. 대규모 주택공급이 필요한 곳은 신속통합기획과 모아타운, 역사·경관 보존이 필요한 저층주거지는 휴먼타운 2.0입니다. 고덕1구역은 전자입니다.</th></tr></thead></table></div>
+<p class="source-p">지금 고덕1구역에 휴먼타운 2.0을 적용할 지정계획도, 필지별 사업수지도 제시된 바 없습니다. 숫자 하나 없이 「검토를 건의한다」고만 해서는 비교가 되지 않습니다. 재개발보다 유리하다고 주장하시려면, 필지별로 얼마를 들여 몇 세대를 짓고 소유자가 얼마를 가져가는지를 숫자로 내놓으셔야 합니다. 그것이 반대측 자료가 저희에게 요구한 기준입니다. 같은 기준을 적용해 주시기 바랍니다.</p>
+<p class="source-p">휴먼타운 2.0 관련 내용은 2026년 10월 서울시 발표 및 관련 보도 기준입니다. 제도가 확대 중이므로 세부 적용 기준은 변경될 수 있으며, 특정 구역의 적용 가능 여부는 서울시·강동구 확인이 필요합니다.</p>
+    </div>
+  </details>
+</article>
+<article class="issue" id="issue-12">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">12</div>
+      <div class="issue-title">수입 감소와 비용 증가를 함께 검증해야 합니다</div>
+      <div class="issue-status">보고서 수록</div>
+    </div>
+    <p class="issue-summary">총수입 감소와 총사업비 증가를 동시에 적용한 시나리오도 계산돼 있습니다.</p>
+    <p class="issue-body">총수입 −10%·총사업비 +10%를 동시에 적용한 경우 비례율 81.606%, 사업이익 11,149억원, 단독 84형 환급금 8.25억원, 빌라 39형 분담금 3.27억원으로 제시합니다. 공사비와 분양가를 각각 또는 동시에 바꾼 7개 시나리오가 함께 정리돼 있습니다.</p>
+    <div class="issue-source">회의 자료 Ⅶ장 p.9~10</div>
+  </div>
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      <h3 class="source-chapter">VII. 수입이 줄고 비용이 늘면 어떻게 되는가</h3>
+<p class="source-p">「좋은 결과뿐 아니라 불리한 조건의 계산도 필요하다」는 지적은 타당합니다. 반대측 자료는 총수입 −10%, 총사업비 +10%를 적용해 차액이 35.0% 감소한다고 계산했습니다. 그 조건과, 공사비·분양가만 변동시킨 조건을 함께 계산했습니다. 두 조건은 적용 범위가 다르므로 구분해서 보셔야 합니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>시나리오</th><th>비례율</th><th>단독 84형 환급금</th><th>빌라 39형 분담금</th></tr></thead><tbody><tr><td>기준 (현행 제출용)</td><td>122.702%</td><td>17.81억원</td><td>+1.87억원</td></tr><tr><td>공사비 +10%</td><td>113.693%</td><td>15.38억원</td><td>+2.37억원</td></tr><tr><td>공사비 +20%</td><td>104.685%</td><td>12.95억원</td><td>+2.86억원</td></tr><tr><td>분양가 −5%</td><td>111.399%</td><td>15.53억원</td><td>+2.06억원</td></tr><tr><td>분양가 −10%</td><td>100.097%</td><td>13.24억원</td><td>+2.25억원</td></tr><tr><td>분양가 −10% &amp; 공사비 +10%</td><td>91.088%</td><td>10.81억원</td><td>+2.75억원</td></tr><tr><td>총수입 −10% &amp; 총사업비 +10%</td><td>81.606%</td><td>8.25억원</td><td>+3.27억원</td></tr></tbody></table></div>
+<p class="source-bullet">· 공사비가 20% 올라도 비례율은 104.685%로 100%를 넘습니다. 공사비 20% 상승은 평당 1,050만원이 1,260만원이 된다는 뜻이며, 2025년 서울 재개발 평균 공사비 890만원의 1.42배입니다.</p>
+<p class="source-bullet">· 분양가 −10%, 공사비 +10%에서는 비례율이 91.088%로 100% 아래로 내려갑니다. 단독 소유자의 환급금은 10.81억원으로 줄고, 빌라 소유자의 분담금은 2.75억원으로 늘어납니다.</p>
+<p class="source-bullet">· 반대측 자료가 제시한 조건을 글자 그대로 적용하면, 즉 임대·상가 매출을 포함한 총수입 전체를 10% 낮추고 금융비·부담금까지 포함한 총사업비 전체를 10% 올리면 비례율은 81.606%입니다. 이 경우에도 사업이익은 11,149억원이며, 단독 소유자는 8.25억원을 환급받습니다. 분양가 −10%·공사비 +10%(91.088%)와는 적용 범위가 다른 조건입니다.</p>
+<p class="source-bullet">· 비례율이 100% 아래라는 것은 사업이익이 없다는 뜻이 아닙니다. 비례율 91.088%에서도 사업이익은 12,444억원입니다. 종전자산 총액 13,662억원에 못 미친다는 뜻입니다.</p>
+<p class="source-p">비용이 오르는 국면에 분양가와 주변 시세가 어떻게 움직일지는 단정할 수 없습니다. 다만 이 분석은 현재 기준으로 비용을 고시 사례 중 가장 높게 잡아 두었습니다. 이보다 더 보수적으로 잡아야 한다는 주장이라면, 어느 수준이 적정한지와 그 근거를 함께 제시해 주시기 바랍니다. 비용은 오르고 집값은 떨어진다는 전제로 계산하려면 그 숫자의 출처가 있어야 합니다.</p>
+<p class="source-p">위 민감도는 해당 변수만 변동시키고 다른 조건(금융비용, 이주비, 기부채납, 예비비 요율, 법인세율)은 고정한 계산입니다. 분양가 변동은 일반분양가와 조합원분양가에 같은 비율로 적용하였습니다. 조합원분양가가 함께 내려가므로 분담금 증가 폭은 환급금 감소 폭보다 작습니다.</p>
+    </div>
+  </details>
+</article>
+<article class="issue" id="issue-13">
+  <div class="issue-top">
+    <div class="issue-head">
+      <div class="issue-no">13</div>
+      <div class="issue-title">동의보다 먼저 공개해야 할 4가지 자료</div>
+      <div class="issue-status">전부 공개됨</div>
+    </div>
+    <p class="issue-summary">회의자료는 ①~③은 공개 가능하며 이미 자료에 수록돼 있고, ④의 개별 금액 일부는 현재 단계에서 확정할 수 없다고 구분합니다.</p>
+    <p class="issue-body">① 평형별 수입·전체 사업비 원본, ② 비례율·분양가·환급금 연결 계산표, ③ 비용 상승·수입 감소 시 부담 변화는 현재 공개 가능하다고 설명합니다. ④ 이주·재정착·개별 보상액 중 일부는 감정평가와 관리처분 등 법정 절차 이후에 확정됩니다.</p>
+    <div class="issue-source">회의 자료 ⅩⅢ장 p.17~18</div>
+  </div>
+  <details>
+    <summary>
+      <span><span class="open-txt">회의자료 상세내역 보기</span><span class="close-txt">상세내역 접기</span></span>
+      <span>⌄</span>
+    </summary>
+    <div class="detail-body">
+      <h3 class="source-chapter">XIII. 공개 요구 네 가지에 대하여</h3>
+<p class="source-p">반대측 자료는 동의 전에 네 가지 자료를 공개할 것을 요구했습니다. 지금 공개할 수 있는 것과 현 단계에서 산출이 불가능한 것을 구분해 말씀드립니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>요구 자료</th><th>현재 가능 여부</th><th>비고</th></tr></thead><tbody><tr><td>① 평형별 수입과 전체 사업비 원본</td><td>공개 가능</td><td>본 답변서 I·V장 및 사업수지분석(제출용) 전문</td></tr><tr><td>② 비례율·분양가·환급금 연결 계산표</td><td>공개 가능</td><td>본 답변서 III·IV·X장</td></tr><tr><td>③ 비용 상승·수입 감소 시 부담 변화</td><td>공개 가능</td><td>본 답변서 VII장</td></tr><tr><td>④ 현재 절차와 이주·재정착·대안 계획</td><td>일부만 가능</td><td>절차는 공개 가능. 개별 보상액은 산출 불가</td></tr></tbody></table></div>
+<p class="source-p">①에서 ③까지는 이 답변서와 「고덕1지구 사업수지분석」(제출용)에 전부 들어 있습니다. 산출 근거와 적용 법령, 가정값까지 공개되어 있으므로 대조해 보실 수 있습니다.</p>
+<p class="source-p">그리고 이 자료들은 어제오늘 공개된 것이 아닙니다. 사업수지분석 보고서는 추진준비위원회 사무실에서 처음부터 열람할 수 있었습니다. 「동의보다 먼저 공개하라」는 요구에 답하자면, 공개되어 있었습니다. 와서 보지 않으신 것입니다.</p>
+<h4 class="source-subhead">④가 지금은 불가능한 이유</h4>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>단계</th><th>주체</th><th>확정되는 것</th></tr></thead><tbody><tr><td>정비계획 입안 제안 (현재 단계)</td><td>추진준비위원회</td><td>구역계, 용적률, 개략 세대수, 개략 사업수지</td></tr><tr><td>정비구역 지정</td><td>서울시·강동구</td><td>정비계획 확정</td></tr><tr><td>조합설립인가</td><td>조합</td><td>조합원 확정, 정비업체·설계자 선정</td></tr><tr><td>사업시행계획인가</td><td>조합</td><td>종전자산 감정평가, 주거이전비, 영업손실보상 산정</td></tr><tr><td>관리처분계획인가</td><td>조합</td><td>평형 배정, 조합원분양가, 개별 분담금·환급금 확정</td></tr></tbody></table></div>
+<p class="source-p">소유자·세입자·상가별 개별 부담액은 종전자산 감정평가가 끝난 뒤에야 산출됩니다. 감정평가는 사업시행계획인가 단계에서 조합이 시행합니다. 현재는 조합이 설립되기 전이고 감정평가도 시행되지 않았습니다. 추진준비위원회가 지금 개별 부담액을 공개한다면 그것은 근거 없는 숫자가 됩니다.</p>
+<p class="source-p">주거이전비와 영업손실보상은 「도시 및 주거환경정비법」이 준용하는 토지보상법령에 따라 산정됩니다. 산정 기준이 법령에 정해져 있으므로 추진준비위원회가 임의로 정하거나 약속할 수 있는 성질이 아닙니다.</p>
+    </div>
+  </details>
+</article>
+
+<section class="final-check">
+  <h2>마지막으로 — 검증은 법으로 정해진 단계에서 받습니다</h2>
+  <p>전단지는 정밀 검증이 조합 설립 이후 법정 절차에서 전문기관을 통해 이루어진다고 설명합니다.</p>
+  <div class="source-table-wrap">
+    <table class="verify-table">
+      <thead><tr><th>단계</th><th>검증 주체와 내용</th></tr></thead>
+      <tbody>
+        <tr><td>조합설립인가</td><td>추정분담금 검증 — 자치구 검증위원회 심의</td></tr>
+        <tr><td>사업시행계획인가</td><td>종전자산 감정평가 — 감정평가법인 2인 이상</td></tr>
+        <tr><td>시공자 선정·계약</td><td>공사비 검증 — 법정 공사비 검증 제도</td></tr>
+        <tr><td>관리처분계획인가</td><td>개별 분담금·환급금 확정 — 구청 인가</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>전단지는 “정비구역 지정은 사업을 확정하는 절차가 아니라, 향후 검증을 받을 수 있는 단계로 가는 절차”라는 취지로 마무리합니다.</p>
+</section>
+
+<details class="closing">
+  <summary>회의자료 맺음말 전체 보기</summary>
+  <div class="detail-body"><h4 class="source-subhead">맺음</h4>
+<p class="source-p">반대측 자료의 요지는 「자료를 공개하고 검증한 뒤 판단하자」는 것입니다. 자료는 처음부터 공개되어 있었습니다. 추진준비위원회 사무실에서 누구나 열람할 수 있었고, 홈페이지에도 같은 내용이 올라가 있습니다. 공개하라고 요구하기 전에 보셨어야 합니다.</p>
+<p class="source-p">그리고 검증을 요구하는 쪽이 지켜야 할 최소한이 있습니다. 숫자를 맞게 적는 것입니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>반대측 자료의 오류</th><th>내용</th></tr></thead><tbody><tr><td>일반분양가를 조합원분양가로 사용</td><td>84형 15.32억원을 21.88억원으로. 6.56억원 과대.<br>정산 표 네 줄이 전부 틀렸고 「147% 필요」 결론이 여기서 나옴</td></tr><tr><td>세대수 임의 가정</td><td>보고서의 2,693세대를 두고 2,450세대. 세대당 평균 9.9% 과대</td></tr></tbody></table></div>
+<p class="source-p">조합원분양가와 일반분양가를 구분하지 못하는 자료가 다른 사람의 사업수지를 검증하겠다고 할 수는 없습니다. 그 구분은 재개발의 기초이고, 그 숫자는 보고서의 같은 표 같은 줄에 적혀 있습니다. 보고서는 사무실에 늘 있었습니다. 읽지 않고 가정한 것입니다.</p>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>비교한 사례 범위에서 네 지표 모두 1위입니다</th><th>평당 총사업비 1,607만원 — 비교 가능한 고시 사례 중 1위<br>총사업비/직접공사비 배수 1.531 — 고시 사례 범위 1.346~1.530의 상단 초과<br>평당 직접공사비 1,050만원 — 비교한 10개 구역 및 서울시 평균 2개 중 1위<br>세대당 총사업비 7.29억원 — 비교한 8개 구역 중 1위<br><br>사업비를 얇게 잡아 비례율을 부풀린 구조가 아닙니다. 비교 가능한 모든 사례보다 두껍게 잡은 사업비 위에서 나온 비례율 122.702%입니다. 여기서 비용을 더 보수적으로 잡으라는 주장이라면, 어느 수준이 적정한지와 그 근거를 숫자로 제시해 주시기 바랍니다.</th></tr></thead></table></div>
+<div class="source-table-wrap"><table class="source-table"><thead><tr><th>자료는 열어 두었습니다</th><th>「고덕1지구 재개발정비사업 사업수지분석」(제출용) 전문을 추진준비위원회 사무실에서 열람하실 수 있습니다. 계산 과정, 적용 법령, 가정값, 민감도 분석까지 전부 들어 있습니다. 홈페이지 godeok1.netlify.app에도 같은 내용이 공개되어 있습니다.<br><br>숫자를 제시하는 쪽은 그 산출 근거를 함께 내놓아야 합니다. 저희는 내놓았습니다. 대조해 보시고 판단해 주십시오.</th></tr></thead></table></div>
+<p class="source-p">고덕1구역 재개발 추진준비위원회</p>
+<p class="source-p">사업수지분석 전문 열람 · 추진준비위원회 사무실   |   godeok1.netlify.app</p></div>
+</details>
+</main>
+
+<footer>
+  고덕1구역 재개발정비사업 추진준비위원회 · 첨부 전단지 및 2026년 11월 2일 회의자료 기반 웹 구성 샘플<br>
+  본 페이지의 상세 내용은 첨부된 회의자료의 문구와 표를 웹 형식으로 재배치한 것입니다.
+</footer>
+</div>
+<a class="to-top" href="#top" aria-label="맨 위로 이동">↑ 맨위로</a>
+
+<script>
+(function(){
+  var DEFAULT=[
+    {enabled:true,label:'사업 소개',sub:'사업수지·분담금',href:'./',page:'main'},
+    {enabled:true,label:'반대측 주장에 대한 논변',sub:'영상 13개 논점 검증',href:'./response.html',page:'response'},
+    {enabled:false,label:'미사용',sub:'추후 메뉴',href:'#',page:'unused'}
+  ];
+  var MARKER='<!-- godeok1-site-nav:v1 -->';
+  var API='https://api.github.com/repos/comfunnylj/Real_estates/issues/1/comments?per_page=100';
+  function current(){return document.body.getAttribute('data-page')||'response'}
+  function norm(list){
+    return [0,1,2].map(function(i){
+      var b=DEFAULT[i],s=(list&&list[i])||{};
+      return {enabled:typeof s.enabled==='boolean'?s.enabled:b.enabled,label:String(s.label||b.label),sub:String(s.sub||b.sub),href:String(s.href||b.href),page:String(s.page||b.page)}
+    })
+  }
+  function render(list){
+    var nav=document.getElementById('siteSwitcher'),cur=current();nav.innerHTML='';
+    norm(list).forEach(function(x){
+      var el=document.createElement(x.enabled?'a':'div');
+      el.className='site-switch'+(x.page===cur?' is-active':'')+(x.page==='response'?' is-response':'')+(!x.enabled?' is-disabled':'');
+      if(x.enabled)el.href=x.href;else el.setAttribute('aria-disabled','true');
+      el.innerHTML='<span>'+x.label+(x.sub?'<small>'+x.sub+'</small>':'')+'</span>';nav.appendChild(el)
+    })
+  }
+  function parse(body){
+    if(typeof body!=='string'||body.indexOf(MARKER)!==0)return null;
+    try{var o=JSON.parse(body.slice(MARKER.length).trim());return o&&Array.isArray(o.items)?o.items:null}catch(e){return null}
+  }
+  render(DEFAULT);
+  fetch(API+'&_='+Date.now(),{headers:{Accept:'application/vnd.github+json'},cache:'no-store'})
+   .then(function(r){if(!r.ok)throw 0;return r.json()})
+   .then(function(cs){var f=null;cs.forEach(function(c){var x=parse(c.body);if(x)f=x});if(f)render(f)})
+   .catch(function(){});
+})();
+</script>
+
+</body>
+</html>

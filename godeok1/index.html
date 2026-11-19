@@ -1,67 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>고덕1지구 재개발정비사업 — 토지등소유자 안내</title>
-<meta name="description" content="서울 강동구 고덕1지구 재개발정비사업 토지등소유자 안내">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#F4F6F1">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="고덕1지구 재개발정비사업">
-<meta property="og:title" content="고덕1지구 재개발정비사업 — 토지등소유자 안내">
-<meta property="og:description" content="고덕1지구 재개발정비사업 사업수지와 토지등소유자 안내">
-<meta property="og:image" content="og-image.png">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>고덕1지구 재개발정비사업</title>
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#12191A">
 <style>
-html,body{margin:0;min-height:100%;font-family:system-ui,-apple-system,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;background:#F4F6F1;color:#19282A}
-#boot{max-width:720px;margin:0 auto;padding:80px 24px;text-align:center}
-#boot h1{font-size:24px;margin:0 0 14px}
-#boot p{line-height:1.7;color:#56666A}
-#boot button{margin-top:14px;padding:11px 18px;border:0;border-radius:9px;background:#B93E2B;color:#fff;font-weight:700;cursor:pointer}
+html,body{margin:0;min-height:100%;background:#12191A;color:#e7ede8;font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+#boot{max-width:560px;margin:0 auto;padding:28px 20px;font-size:14px;color:#a7b5b4}
+#boot b{display:block;color:#e7ede8;font-size:16px;margin-bottom:7px}
+#retry{display:none;margin-top:16px;padding:9px 13px;border:1px solid #56666a;background:transparent;color:#e7ede8}
 </style>
 </head>
 <body>
-<div id="boot">
-  <h1>고덕1지구 재개발정비사업</h1>
-  <p>최신 안내 내용을 불러오는 중입니다.</p>
-</div>
+<div id="boot"><b>고덕1구역 페이지를 불러오는 중입니다.</b><span id="msg">최신 내용을 확인하고 있습니다.</span><br><button id="retry" type="button">다시 시도</button></div>
 <script>
-(async function(){
-  const api='https://api.github.com/repos/comfunnylj/Real_estates/issues/1/comments?per_page=100&_=' + Date.now();
-  const cacheKey='godeok1-live-html-v1';
+(function(){
+  'use strict';
 
-  function render(html){
-    if(!html || !html.includes('<html')) throw new Error('invalid live html');
-    try{ localStorage.setItem(cacheKey, html); }catch(e){}
+  var API='https://api.github.com/repos/comfunnylj/Real_estates/issues/1/comments?per_page=100';
+  var PREFIX="godeok1-main-content";
+  var FALLBACK="./content/main-content.html";
+  var CACHE_KEY="godeok1-main-content-cache-v1";
+
+  function showMessage(s, retry){
+    var m=document.getElementById('msg'), b=document.getElementById('retry');
+    if(m)m.textContent=s;
+    if(b)b.style.display=retry?'inline-block':'none';
+  }
+
+  function writePage(source){
+    if(typeof source!=='string' || source.length<1000 || !/<html[\s>]/i.test(source) || !/<\/html>/i.test(source)){
+      throw new Error('invalid html');
+    }
+    try{ localStorage.setItem(CACHE_KEY, source); }catch(e){}
     document.open();
-    document.write(html);
+    document.write(source);
     document.close();
   }
 
-  try{
-    const res=await fetch(api,{
-      cache:'no-store',
-      headers:{'Accept':'application/vnd.github+json'}
+  function parseCompleteVersion(comments){
+    var groups={};
+    comments.forEach(function(c){
+      var body=(c&&c.body)||'';
+      var re=new RegExp('^<!--\\s*'+PREFIX.replace(/[.*+?^${}()|[\\]\\]/g,'\\$&')+':([^:]+):part:(\\d+)\\/(\\d+)\\s*-->');
+      var m=body.match(re);
+      if(!m)return;
+      var version=m[1], part=parseInt(m[2],10), total=parseInt(m[3],10);
+      if(!groups[version])groups[version]={parts:{},total:total,updated:''};
+      groups[version].parts[part]=body.slice(m[0].length).replace(/^\s+/,'');
+      groups[version].total=total;
+      var t=(c.updated_at||c.created_at||'');
+      if(t>groups[version].updated)groups[version].updated=t;
     });
-    if(!res.ok) throw new Error('GitHub API '+res.status);
-    const comments=await res.json();
-    const parts=comments.map(function(c){
-      const m=(c.body||'').match(/^<!--\s*godeok1-live-part:(\d+)\s*-->\n?([\s\S]*)$/);
-      return m ? {n:Number(m[1]),html:m[2]} : null;
-    }).filter(Boolean).sort(function(a,b){return a.n-b.n;});
-    if(parts.length<1) throw new Error('live parts missing');
-    render(parts.map(function(p){return p.html;}).join(''));
-  }catch(err){
-    let cached='';
-    try{ cached=localStorage.getItem(cacheKey)||''; }catch(e){}
-    if(cached){
-      try{ render(cached); return; }catch(e){}
-    }
-    document.getElementById('boot').innerHTML=
-      '<h1>고덕1지구 재개발정비사업</h1>'+
-      '<p>최신 안내 내용을 불러오지 못했습니다. 네트워크 연결을 확인한 뒤 다시 시도해 주세요.</p>'+
-      '<button onclick="location.reload()">다시 불러오기</button>';
+
+    var complete=[];
+    Object.keys(groups).forEach(function(v){
+      var g=groups[v], ok=true, arr=[];
+      for(var i=1;i<=g.total;i++){
+        if(typeof g.parts[i]!=='string'){ok=false;break}
+        arr.push(g.parts[i]);
+      }
+      if(ok)complete.push({version:v,updated:g.updated,html:arr.join('')});
+    });
+    complete.sort(function(a,b){
+      if(a.updated===b.updated)return a.version<b.version?1:-1;
+      return a.updated<b.updated?1:-1;
+    });
+    return complete.length?complete[0].html:null;
   }
+
+  function loadFallback(){
+    return fetch(FALLBACK,{cache:'no-cache'})
+      .then(function(r){if(!r.ok)throw new Error('fallback '+r.status);return r.text()});
+  }
+
+  function load(){
+    showMessage('최신 내용을 확인하고 있습니다.',false);
+    fetch(API+'&_='+Date.now(),{headers:{Accept:'application/vnd.github+json'},cache:'no-store'})
+      .then(function(r){if(!r.ok)throw new Error('github '+r.status);return r.json()})
+      .then(function(cs){
+        var remote=parseCompleteVersion(cs);
+        if(remote)return remote;
+        return loadFallback();
+      })
+      .then(writePage)
+      .catch(function(){
+        var cached=null;
+        try{cached=localStorage.getItem(CACHE_KEY)}catch(e){}
+        if(cached){
+          try{writePage(cached);return}catch(e){}
+        }
+        loadFallback().then(writePage).catch(function(){
+          showMessage('페이지를 불러오지 못했습니다. 인터넷 연결 후 다시 시도해 주세요.',true);
+        });
+      });
+  }
+
+  document.getElementById('retry').addEventListener('click',load);
+  load();
 })();
 </script>
 </body>

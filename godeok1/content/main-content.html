@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>고덕1지구 재개발정비사업 — 토지등소유자 안내 (보수적 산정)</title>
+<meta name="description" content="서울 강동구 고덕1지구 재개발정비사업 사업수지분석. 총 2,701세대, 추정 비례율 122.7%. 내 종전자산을 입력하면 분담금과 자산 증가액을 바로 확인할 수 있습니다.">
+<meta name="author" content="고덕1지구 재개발정비사업 추진준비위원회">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#F4F6F1">
+
+<!-- 카카오톡·페이스북 등 공유 미리보기 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="고덕1지구 재개발정비사업">
+<meta property="og:title" content="고덕1지구 재개발정비사업 — 토지등소유자 안내 (보수적 산정)">
+<meta property="og:description" content="총 2,701세대 · 토지등소유자 858명 · 추정 비례율 122.7% (보수적 산정). 내 분담금과 자산 증가액을 직접 확인해 보세요.">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="고덕1지구 재개발정비사업 — 토지등소유자 안내 (보수적 산정)">
+<meta name="twitter:description" content="총 2,701세대 · 추정 비례율 122.7%. 내 분담금과 자산 증가액을 확인해 보세요.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23F4F6F1'/%3E%3Cpath d='M18 62 L50 32 L82 62' fill='none' stroke='%23B93E2B' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='34' y='58' width='32' height='26' fill='%233B6A4C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F6F1; --panel:#FFFFFF; --ink:#19282A; --ink2:#56666A; --ink3:#7C8A8C;
+  --line:#CBD4CE; --line2:#E2E8E2;
+  --zone:#B93E2B; --park:#3B6A4C; --plot:#C9A23C;
+  --zone-soft:#F6E6E1; --park-soft:#E4EDE5; --plot-soft:#F7EFD9;
+  --serif:"Gowun Batang",'Nanum Myeongjo',ui-serif,Georgia,serif;
+  --sans:"IBM Plex Sans KR",'Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#12191A; --panel:#1A2324; --ink:#E7EDE8; --ink2:#A7B5B4; --ink3:#7F8D8C;
+    --line:#32413F; --line2:#263230;
+    --zone:#E2725B; --park:#7FB58C; --plot:#DCBB63;
+    --zone-soft:#2C1E1B; --park-soft:#1B2A20; --plot-soft:#2A2517;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#12191A; --panel:#1A2324; --ink:#E7EDE8; --ink2:#A7B5B4; --ink3:#7F8D8C;
+  --line:#32413F; --line2:#263230;
+  --zone:#E2725B; --park:#7FB58C; --plot:#DCBB63;
+  --zone-soft:#2C1E1B; --park-soft:#1B2A20; --plot-soft:#2A2517;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:16.5px;line-height:1.75;letter-spacing:-0.005em}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;letter-spacing:-0.01em;line-height:1.3;margin:0}
+p{margin:0 0 1em}
+a{color:var(--zone)}
+
+header{padding:46px 0 10px}
+.kicker{font-size:13.5px;color:var(--ink2);letter-spacing:.02em;margin-bottom:12px}
+h1{font-size:clamp(30px,7.2vw,46px)}
+.lede{font-size:clamp(16px,3.6vw,18.5px);color:var(--ink2);margin-top:16px;max-width:36em}
+
+
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line2);
+  border:1px solid var(--line2);margin:26px 0 0}
+.facts div{background:var(--panel);padding:15px 13px}
+.facts dt{font-size:12.5px;color:var(--ink3);margin-bottom:5px}
+.facts dd{margin:0;font-family:var(--serif);font-size:clamp(19px,4.6vw,25px);font-weight:700}
+.facts dd small{font-family:var(--sans);font-size:13px;font-weight:400;color:var(--ink2);margin-left:3px}
+@media(max-width:560px){.facts{grid-template-columns:repeat(2,1fr)}.facts div:last-child{grid-column:1/-1}}
+
+section{padding:52px 0 0}
+.mark{border-top:2px dashed var(--zone);padding-top:15px;margin-bottom:22px}
+.mark h2{font-size:clamp(22px,5vw,29px)}
+.mark p{margin:9px 0 0;color:var(--ink2);font-size:15.5px;max-width:36em}
+h3.sub{font-size:19px;margin:30px 0 8px}
+
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0}
+table{border-collapse:collapse;width:100%;min-width:400px;font-size:14.5px;background:var(--panel)}
+caption{text-align:left;font-size:14px;color:var(--ink2);padding-bottom:8px}
+th,td{border:1px solid var(--line2);padding:9px 11px;text-align:left;vertical-align:top}
+thead th{background:var(--park-soft);font-weight:600;color:var(--ink);white-space:nowrap}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.sum td{background:var(--plot-soft);font-weight:600}
+tr.hi td{background:var(--park-soft)}
+
+.big{border:1px solid var(--line);background:var(--panel);padding:22px 20px;margin:20px 0;
+  display:flex;gap:22px;align-items:baseline;flex-wrap:wrap}
+.big b{font-family:var(--serif);font-size:clamp(38px,9vw,56px);font-weight:700;line-height:1;color:var(--zone)}
+.big span{font-size:15.5px;color:var(--ink2);max-width:24em}
+
+.calc{border:1px solid var(--line);background:var(--panel);padding:22px 20px;margin:20px 0}
+.calc h3{font-size:19px;margin-bottom:5px}
+.calc .cs{font-size:14px;color:var(--ink2);margin-bottom:18px}
+.presets{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.presets button{font-family:var(--sans);font-size:13.5px;padding:7px 13px;cursor:pointer;
+  border:1px solid var(--line);background:transparent;color:var(--ink2);border-radius:2px}
+.presets button:hover{border-color:var(--zone);color:var(--zone)}
+.presets button[aria-pressed="true"]{background:var(--zone);border-color:var(--zone);color:#fff}
+.inrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+label{font-size:14px;color:var(--ink2)}
+input[type=number]{font-family:var(--sans);font-size:17px;font-weight:500;width:110px;padding:8px 10px;
+  border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:2px;
+  font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;margin:15px 0 4px;accent-color:var(--zone)}
+.scale{display:flex;justify-content:space-between;font-size:12px;color:var(--ink3)}
+.opt{display:flex;align-items:center;gap:9px;margin:16px 0 4px;font-size:14.5px;color:var(--ink)}
+.opt input{width:17px;height:17px;accent-color:var(--zone)}
+.right{margin:18px 0;padding:14px 15px;background:var(--park-soft);border-left:3px solid var(--park);font-size:15px}
+.right b{font-family:var(--serif);font-size:22px}
+.pay{color:var(--zone);font-weight:600}
+.ref{color:var(--park);font-weight:600}
+.note{font-size:13px;color:var(--ink3);line-height:1.65;margin-top:14px}
+
+.pts{display:grid;gap:1px;background:var(--line2);border:1px solid var(--line2);margin:18px 0}
+.pts article{background:var(--panel);padding:17px 18px}
+.pts h3{font-size:17px;margin-bottom:6px}
+.pts p{font-size:14.5px;color:var(--ink2);margin:0}
+@media(min-width:620px){.pts{grid-template-columns:1fr 1fr}}
+
+.quote{border-left:3px solid var(--plot);padding:4px 0 4px 17px;margin:20px 0;
+  font-size:16px;color:var(--ink2);max-width:34em}
+
+.warn{border:1px solid var(--zone);background:var(--zone-soft);padding:20px 19px;margin:22px 0}
+.warn h3{font-size:17px;margin-bottom:9px;color:var(--zone)}
+.warn ul{margin:0;padding-left:19px;font-size:14.5px;color:var(--ink2)}
+.warn li{margin-bottom:7px}
+.warn li:last-child{margin-bottom:0}
+
+.contact{border:1px solid var(--line);background:var(--panel);margin:18px 0}
+.crow{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px;padding:15px 18px;border-bottom:1px solid var(--line2)}
+.crow:last-child{border-bottom:0}
+.clab{font-size:13.5px;color:var(--ink3);min-width:11em}
+.cval{font-family:var(--serif);font-size:clamp(20px,4.6vw,25px);font-weight:700;
+  color:var(--zone);text-decoration:none;word-break:break-all}
+.cval:hover{text-decoration:underline}
+.dlwrap{margin:24px 0 0;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.dlwrap button{font-family:var(--sans);font-size:15px;font-weight:500;padding:11px 20px;cursor:pointer;
+  border:1px solid var(--zone);background:transparent;color:var(--zone);border-radius:2px}
+.dlwrap button:hover{background:var(--zone);color:#fff}
+.dlwrap button[disabled]{opacity:.5;cursor:default}
+.dlmsg{font-size:13.5px;color:var(--ink3)}
+
+footer{margin-top:58px;border-top:1px solid var(--line);padding:24px 0 54px;
+  font-size:13px;color:var(--ink3);line-height:1.7}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+:focus-visible{outline:2px solid var(--zone);outline-offset:2px}
+
+/* godeok1-fold-v1 */
+.fold-intro{margin:8px 0 14px;color:var(--ink2);font-size:15px;line-height:1.65}
+.fold-detail{margin:10px 0 0;border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden}
+.fold-detail>summary{list-style:none;cursor:pointer;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--zone);font-size:15px;font-weight:600;user-select:none}
+.fold-detail>summary::-webkit-details-marker{display:none}
+.fold-detail>summary .fold-less{display:none}
+.fold-detail[open]>summary .fold-more{display:none}
+.fold-detail[open]>summary .fold-less{display:inline}
+.fold-detail>summary .fold-chevron{font-size:18px;line-height:1;transition:transform .18s ease}
+.fold-detail[open]>summary .fold-chevron{transform:rotate(180deg)}
+.fold-body{padding:6px 16px 18px;border-top:1px solid var(--line2)}
+.fold-body>:first-child{margin-top:10px}
+@media(max-width:520px){
+  .fold-intro{font-size:14px;line-height:1.65}
+  .fold-detail>summary{padding:12px 14px;font-size:14.5px}
+  .fold-body{padding:4px 14px 16px}
+}
+
+
+/* asset-case-grid-v1 */
+.asset-case-title{margin:22px 0 10px;font-family:var(--serif);font-size:18px;font-weight:700;color:var(--ink)}
+.asset-cases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:10px 0 6px}
+.asset-case{background:var(--panel);border:1px solid var(--line);padding:14px 14px 13px;border-radius:9px}
+.asset-case .ac-type{font-size:13px;color:var(--ink3);margin-bottom:4px}
+.asset-case .ac-route{font-size:14.5px;font-weight:600;color:var(--ink);margin-bottom:8px}
+.asset-case .ac-main{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--zone);line-height:1.2;margin-bottom:6px}
+.asset-case .ac-sub{font-size:12.8px;line-height:1.55;color:var(--ink2)}
+.asset-case .ac-sub b{color:var(--ink)}
+@media(max-width:560px){.asset-cases{grid-template-columns:1fr}}
+
+
+/* ===== top site switcher v2 ===== */
+.site-switcher-wrap{
+  position:sticky;top:0;z-index:999;
+  background:var(--paper);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 1px 0 rgba(0,0,0,.04);
+}
+.site-switcher{
+  max-width:980px;margin:0 auto;padding:8px 16px;
+  display:grid;grid-template-columns:1fr 1.55fr 1fr;gap:7px;
+}
+.site-switch{
+  min-height:44px;border:1px solid var(--line);
+  background:var(--panel);color:var(--ink2);
+  text-decoration:none;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:8px 10px;font-size:13px;font-weight:700;line-height:1.25;
+  transition:.15s ease;
+}
+.site-switch:hover:not(.is-disabled){
+  border-color:var(--ink3);transform:translateY(-1px)
+}
+.site-switch.is-active{
+  background:var(--park);
+  color:#fff;
+  border-color:var(--park)
+}
+.site-switch.is-response.is-active{
+  background:var(--zone);
+  color:#fff;
+  border-color:var(--zone)
+}
+.site-switch.is-disabled{
+  background:var(--line2);
+  color:var(--ink3);
+  opacity:.55;cursor:default;border-style:dashed
+}
+.site-switch small{
+  display:block;font-size:10px;font-weight:500;margin-top:2px;opacity:.82
+}
+@media(max-width:560px){
+  .site-switcher{padding:7px 10px;gap:5px;grid-template-columns:1fr 1.45fr .8fr}
+  .site-switch{font-size:11.5px;padding:7px 5px;min-height:42px}
+}
+
+
+/* ===== 기존 라이브 CTA 보존 ===== */
+.cta{display:block;margin:26px 0;padding:18px 22px;border-radius:12px;
+  background:var(--zone);color:#fff;text-decoration:none;
+  border:1px solid var(--zone);transition:filter .15s ease,transform .15s ease}
+.cta:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.cta .cta-l{display:block;font-size:13px;letter-spacing:.04em;opacity:.85;margin-bottom:5px}
+.cta .cta-t{display:block;font-family:var(--serif);font-size:23px;font-weight:700;line-height:1.3}
+.cta .cta-s{display:block;font-size:14.5px;opacity:.92;margin-top:7px;line-height:1.5}
+.cta .cta-go{display:inline-block;margin-top:12px;padding:8px 16px;border-radius:7px;
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.45);
+  font-size:14.5px;font-weight:600}
+.vbtn{display:inline-flex;align-items:center;gap:9px;margin-top:16px;
+  padding:11px 19px;border-radius:9px;text-decoration:none;
+  background:var(--panel);color:var(--zone);border:1.5px solid var(--zone);
+  font-size:15.5px;font-weight:600;transition:background .15s ease,color .15s ease}
+.vbtn:hover{background:var(--zone);color:#fff}
+.vbtn svg{width:17px;height:17px;flex:none}
+@media(max-width:520px){.cta{margin:16px 0;padding:16px 17px}.cta .cta-t{font-size:20px}}
+
+
+/* ===== fixed back-to-top button ===== */
+.to-top{
+ position:fixed;left:14px;bottom:16px;z-index:1200;
+ border:1px solid var(--line);background:var(--panel);color:var(--ink);
+ text-decoration:none;border-radius:999px;padding:9px 12px;
+ font-size:12.5px;font-weight:700;box-shadow:0 5px 18px rgba(0,0,0,.14)
+}
+.to-top:hover{border-color:var(--zone);color:var(--zone)}
+@media(max-width:560px){.to-top{left:10px;bottom:12px;padding:8px 10px;font-size:11.5px}}
+
+</style>
+</head>
+<body data-page="main" id="top">
+
+<div class="site-switcher-wrap" aria-label="고덕1구역 페이지 메뉴">
+  <nav class="site-switcher" id="siteSwitcher"></nav>
+</div>
+
+<div class="wrap">
+
+<a class="cta" href="https://godeok1form001.netlify.app/" target="_blank" rel="noopener">
+  <span class="cta-l">온라인 사전동의서</span>
+  <span class="cta-t">사전동의서를 온라인으로 작성하실 수 있습니다</span>
+  <span class="cta-s">종이 서류 없이 휴대폰으로 바로 제출하실 수 있습니다. 사전동의는 정비계획 입안을 위한 의견 제출이며, 추후 조합설립 동의와는 별개로 언제든 철회하실 수 있습니다.</span>
+  <span class="cta-go">작성하러 가기 →</span>
+</a>
+
+
+<header>
+  <div class="kicker">서울특별시 강동구 고덕동 536번지 일대</div>
+  <h1>고덕1지구<br>재개발정비사업</h1>
+  <p class="lede">정비구역 전체 125,630.6㎡를 대상으로 한 사업수지분석 결과를 토지등소유자 여러분께 알려드립니다. 판단에 참고하시고 사업 추진에 함께해 주시기 바랍니다.</p>
+
+  <a class="vbtn" href="https://drive.google.com/file/d/1w3_Q5Ref8pLbV0fzkHf3Nw8Nm4G57sLg/view" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    동영상으로 보기
+  </a>
+
+  <div class="warn" style="border-color:var(--plot);background:var(--plot-soft);margin-top:22px">
+<h3 style="color:var(--plot)">평당 총사업비를 매우 보수적으로 반영했습니다</h3>
+<p style="margin:0 0 10px;font-size:15px;color:var(--ink2)">고덕1지구 총사업비는 <b>1조 9,690.2억원</b>, 총 건축연면적은 <b>122,534평</b>으로 평당 총사업비는 약 <b>1,607만원</b>입니다. 비교한 서울 재개발 5개 구역 평균 약 <b>1,128만원/평</b>보다 <b>약 42% 높은 수준</b>입니다.</p>
+<div class="tw" style="margin:12px 0"><table><thead><tr><th>서울 재개발 구역</th><th class="n">평당 총사업비<br><span style="font-size:12px;font-weight:400">(지하 포함 총연면적)</span></th></tr></thead><tbody>
+<tr><td>노량진4구역</td><td class="n">1,018만원</td></tr><tr><td>흑석9구역</td><td class="n">1,057만원</td></tr><tr><td>제기4구역</td><td class="n">1,169만원</td></tr><tr><td>금호16구역</td><td class="n">1,186만원</td></tr><tr><td>영등포1-13구역</td><td class="n">1,211만원</td></tr><tr class="sum"><td>비교 5개 평균</td><td class="n"><b>1,128만원</b></td></tr><tr class="hi"><td><b>고덕1지구</b></td><td class="n"><b>1,607만원</b></td></tr>
+</tbody></table></div>
+<p style="margin:0 0 8px;font-size:15px;color:var(--ink2)">공사비만 높게 잡은 것이 아니라 금융비·보상비·부담금·세금·예비비 등을 포함한 <b>총사업비 전체를 높은 수준으로 계상</b>했습니다.</p>
+<p style="margin:0;font-size:14px;color:var(--ink2)">참고: 직접공사비는 총연면적 기준 <b>1,050만원/평</b>입니다. (지상 1,273만원/평 · 지하 750만원/평)</p>
+<div class="asset-case-title">부동산 유형별 대표 사례 — 분담금·환급금 반영 후 실제 순자산 증가</div>
+<div class="asset-cases">
+<div class="asset-case"><div class="ac-type">빌라 · 종전자산 5.5억원</div><div class="ac-route">59형 1채 배정</div><div class="ac-main"><span style="font-family:var(--sans);font-size:13.5px;font-weight:600">분담금 납부 포함 순자산 증가</span><br><span style="font-size:28px">+6.72억원</span></div><div class="ac-sub"><b>지금 자산 5.50억원</b><br>18.23억원 − 분담금 6.01억원 = <b>순자산 12.22억원</b><br><b>+6.72억원</b></div></div>
+<div class="asset-case"><div class="ac-type">단독주택 · 종전자산 27억원</div><div class="ac-route">125형 1채 배정</div><div class="ac-main"><span style="font-family:var(--sans);font-size:13.5px;font-weight:600">환급금 수령 포함 순자산 증가</span><br><span style="font-size:28px">+14.60억원</span></div><div class="ac-sub"><b>지금 자산 27.00억원</b><br>28.25억원 + 환급금 13.35억원 = <b>순자산 41.60억원</b><br><b>+14.60억원</b></div></div>
+<div class="asset-case"><div class="ac-type">상가 · 종전자산 37억원</div><div class="ac-route">125형 + 49형 1+1 가정</div><div class="ac-main"><span style="font-family:var(--sans);font-size:13.5px;font-weight:600">환급금 수령 포함 순자산 증가</span><br><span style="font-size:28px">+21.45억원</span></div><div class="ac-sub"><b>지금 자산 37.00억원</b><br>43.52억원 + 환급금 14.93억원 = <b>순자산 58.45억원</b><br><b>+21.45억원</b></div></div>
+<div class="asset-case"><div class="ac-type">다가구 · 종전자산 38억원</div><div class="ac-route">125형 + 49형 1+1 가정</div><div class="ac-main"><span style="font-family:var(--sans);font-size:13.5px;font-weight:600">환급금 수령 포함 순자산 증가</span><br><span style="font-size:28px">+21.68억원</span></div><div class="ac-sub"><b>지금 자산 38.00억원</b><br>43.52억원 + 환급금 16.16억원 = <b>순자산 59.68억원</b><br><b>+21.68억원</b></div></div>
+</div>
+<p class="note" style="margin:8px 0 4px">※ 순자산 증가액은 분담금 납부·환급금 수령을 모두 반영하고, 새 아파트 가치는 현재 사업수지의 일반분양가를 기준으로 비교한 값입니다. 실제 입주 시점 시세를 보장하지 않습니다.</p>
+<p class="note" style="margin:0;color:var(--zone)"><b>※ 상가·다가구는 125형+49형 1+1 배정을 가정한 대표 사례입니다.</b></p>
+</div>
+
+  <dl class="facts">
+    <div><dt>총 세대수</dt><dd>2,701<small>세대</small></dd></div>
+    <div><dt>토지등소유자</dt><dd>858<small>명</small></dd></div>
+    <div><dt>추정 비례율</dt><dd>122.7<small>%</small></dd></div>
+  </dl>
+</header>
+
+<!-- 사업성 -->
+<section><h2>소유자는 적고 지을 집은 많습니다</h2><p class="fold-intro"><b>토지등소유자 858명</b>에 일반분양은 <b>1,107세대</b>입니다. 소유자 1명당 일반분양 물량은 <b>1.29세대</b>(1,107 ÷ 858)입니다.<br><br>적용 용적률은 <b>264.42%</b>, 총 순부담은 <b>12.50%</b>입니다. 기준용적률 완화 최대 20%p는 현재 기본 사업수지에 반영하지 않았습니다.</p>
+<details class="fold-detail"><summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary><div class="fold-body"><div class="big"><b>1.29배</b><span>일반분양 1,107세대 ÷ 토지등소유자 858명 = 약 1.29세대</span></div>
+<div class="tw"><table><thead><tr><th>구분</th><th class="n">세대</th><th class="n">매출</th></tr></thead><tbody><tr><td>조합원 배정</td><td class="n">1,137</td><td class="n">14,146.0억원</td></tr><tr class="hi"><td>일반분양</td><td class="n">1,107</td><td class="n">20,773.1억원</td></tr><tr class="sum"><td>분양주택 합계</td><td class="n">2,244</td><td class="n">34,919.0억원</td></tr></tbody></table></div>
+<h3 class="sub">용적률</h3><p>정비계획(상한)용적률 250.00%에 도시정비법 제54조 14.42%p를 적용해 264.42%로 계산했습니다. 제3종 법적상한은 300.00%입니다.</p>
+<h3 class="sub">기부채납 순부담</h3><div class="tw"><table><tbody><tr><td>신설 정비기반시설</td><td class="n">37,891.6㎡ (30.16%)</td></tr><tr><td>국공유지 무상양도</td><td class="n">−32,971.2㎡ (−26.24%)</td></tr><tr><td>토지 순부담</td><td class="n">4,920.4㎡ (3.92%)</td></tr><tr><td>건축물 기부채납 환산</td><td class="n">10,781.9㎡ (8.58%)</td></tr><tr class="sum"><td>총 순부담</td><td class="n"><b>15,702.3㎡ (12.50%)</b></td></tr></tbody></table></div>
+<p class="note">건축물 기부채납은 전략 육성용도 시설 구성, 계수 1.0을 가정했으며 설치비 589.5억원을 별도 계상했습니다.</p>
+<h3 class="sub">기준용적률 완화</h3><p>59형 이하 분양주택은 1,591세대이고, 보고서상 20%p 완화 소요물량 251세대의 약 6.5배입니다. 구체적 완화량은 협의·심의로 확정됩니다.</p></div></details></section>
+
+<!-- 분담금 -->
+<section><div class="mark"><h2>내 분담금은 얼마일까</h2><p>권리가액은 종전자산 평가액 × 추정 비례율 122.7%입니다. 조합원분양가와의 차이가 분담금 또는 환급금이 됩니다.</p></div>
+<div class="calc"><h3>종전자산을 넣어보세요</h3><div class="cs">비례율 122.7%, 조합원분양가는 일반분양가의 70% 적용</div>
+<div class="presets" role="group"><button type="button" data-v="5.5">빌라 (5.5억)</button><button type="button" data-v="27">단독주택 (27억)</button><button type="button" data-v="37">상가 (37억)</button><button type="button" data-v="38">다가구 (38억)</button></div>
+<div class="inrow"><label for="amt">내 종전자산 평가액</label><input id="amt" type="number" min="1" max="60" step="0.5" value="5.5"><span>억원</span></div><input id="rng" type="range" min="1" max="60" step="0.5" value="5.5"><div class="scale"><span>1억</span><span>30억</span><span>60억</span></div>
+<label class="opt"><input id="plus" type="checkbox"> 1+1 추가배정 포함 (49형 추가 가정)</label><div class="right" id="rt">권리가액 <b id="gv">6.75</b> 억원 <span style="color:var(--ink2);font-size:13.5px">= 5.5억 × 122.7%</span></div>
+<div class="tw"><table><thead><tr><th>배정</th><th class="n">조합원분양가</th><th class="n">일반분양가(참고)</th><th class="n">가격 차이</th><th class="n">분담/환급</th></tr></thead><tbody id="tb"></tbody></table></div>
+<p class="note">종전자산과 분양가는 현재 단계의 가정값이며 향후 감정평가·심의·관리처분에서 달라질 수 있습니다.</p></div></section>
+
+<!-- 자산 증가 -->
+<section><h2>내 재산은 얼마나 불어나나</h2><p class="fold-intro">현재 일반분양가를 새 아파트 기준가로 놓고 <b>분담금 납부 또는 환급금 수령까지 모두 반영</b>했습니다. 빌라 5.5억원 → 59형은 <b>+6.72억원</b>, 단독 27억원 → 125형 한 채는 <b>+14.60억원</b>의 순자산 증가로 계산됩니다.</p>
+<details class="fold-detail"><summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary><div class="fold-body"><h3 class="sub">빌라 5.5억원</h3><div class="tw"><table><thead><tr><th>배정</th><th class="n">분담금</th><th class="n">일반분양가</th><th class="n">납부 후 순자산</th><th class="n">증가</th></tr></thead><tbody><tr><td>39형</td><td class="n">1.87억</td><td class="n">12.31억</td><td class="n">10.44억</td><td class="n">+4.94억</td></tr><tr><td>49형</td><td class="n">3.94억</td><td class="n">15.27억</td><td class="n">11.33억</td><td class="n">+5.83억</td></tr><tr class="hi"><td>59형</td><td class="n">6.01억</td><td class="n">18.23억</td><td class="n">12.22억</td><td class="n"><b>+6.72억</b></td></tr><tr><td>84형</td><td class="n">8.57억</td><td class="n">21.88억</td><td class="n">13.31억</td><td class="n">+7.81억</td></tr></tbody></table></div>
+<h3 class="sub">단독 27억원</h3><div class="tw"><table><thead><tr><th>배정</th><th class="n">환급금</th><th class="n">일반분양가</th><th class="n">환급 포함 순자산</th><th class="n">증가</th></tr></thead><tbody><tr><td>84형</td><td class="n">17.81억</td><td class="n">21.88억</td><td class="n">39.69억</td><td class="n">+12.69억</td></tr><tr><td>99형</td><td class="n">15.90억</td><td class="n">24.61억</td><td class="n">40.51억</td><td class="n">+13.51억</td></tr><tr class="hi"><td>125형</td><td class="n">13.35억</td><td class="n">28.25억</td><td class="n">41.60억</td><td class="n"><b>+14.60억</b></td></tr></tbody></table></div>
+<h3 class="sub">단독 1+1 가정</h3><div class="tw"><table><tbody><tr><td>84형 + 49형</td><td class="n">환급 7.12억</td><td class="n">순자산 44.27억</td><td class="n">+17.27억</td></tr><tr><td>99형 + 49형</td><td class="n">환급 5.21억</td><td class="n">순자산 45.09억</td><td class="n">+18.09억</td></tr><tr><td>125형 + 49형</td><td class="n">환급 2.66억</td><td class="n">순자산 46.18억</td><td class="n">+19.18억</td></tr></tbody></table></div><p class="note">실제 입주 시점 시세를 보장하는 수치는 아닙니다.</p></div></details></section>
+
+<!-- 분양가 산정 -->
+<section><h2>분양가는 이렇게 정했습니다</h2><p class="fold-intro">일반분양가는 <b>39·49·59형 7,517만원/평, 84형 6,309만원/평, 99형 6,120만원/평, 125형 5,673만원/평</b>입니다. 조합원분양가는 사업수지상 일반분양가의 <b>70%</b>를 적용했습니다.</p>
+<details class="fold-detail"><summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary><div class="fold-body"><div class="tw"><table><thead><tr><th>평형</th><th class="n">일반분양가</th><th class="n">조합원분양가</th></tr></thead><tbody><tr><td>39형</td><td class="n">12.31억</td><td class="n">8.62억</td></tr><tr><td>49형</td><td class="n">15.27억</td><td class="n">10.69억</td></tr><tr><td>59형</td><td class="n">18.23억</td><td class="n">12.76억</td></tr><tr><td>84형</td><td class="n">21.88억</td><td class="n">15.32억</td></tr><tr><td>99형</td><td class="n">24.61억</td><td class="n">17.23억</td></tr><tr><td>125형</td><td class="n">28.25억</td><td class="n">19.78억</td></tr></tbody></table></div><p class="note">인근 준공단지 실거래와 평형별 상대가격을 반영한 산정치이며 향후 확정값이 아닙니다.</p></div></details></section>
+
+<!-- 단독주택 -->
+<section><h2>단독주택 소유자께</h2><p class="fold-intro">단독주택 종전자산 <b>27억원</b> 기준 권리가액은 <b>33.13억원</b>입니다. 125형 한 채 배정 시 환급금은 <b>13.35억원</b>입니다. 현재 사업수지에는 49형 160세대의 1+1 추가배정을 가정했습니다.</p>
+<details class="fold-detail"><summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary><div class="fold-body"><div class="tw"><table><thead><tr><th>대형평형 한 채</th><th class="n">조합원분양가</th><th class="n">환급금</th></tr></thead><tbody><tr><td>84형</td><td class="n">15.32억</td><td class="n">17.81억</td></tr><tr><td>99형</td><td class="n">17.23억</td><td class="n">15.90억</td></tr><tr class="hi"><td>125형</td><td class="n">19.78억</td><td class="n"><b>13.35억</b></td></tr></tbody></table></div>
+<h3 class="sub">1+1 가정</h3><div class="tw"><table><tbody><tr><td>84형+49형</td><td class="n">환급 7.12억</td></tr><tr><td>99형+49형</td><td class="n">환급 5.21억</td></tr><tr><td>125형+49형</td><td class="n">환급 2.66억</td></tr></tbody></table></div>
+<p>99형은 101세대 중 조합원 82세대, 125형은 71세대 중 조합원 66세대입니다. 실제 배정은 향후 확정됩니다.</p></div></details></section>
+
+<!-- 신축 영향 -->
+<section><h2>신축 다세대가 늘면 비례율이 내려갑니다</h2><p class="fold-intro">현재 <b>858명</b>은 이미 허가된 다세대 100세대와 멸실 단독 10필지를 반영한 수치입니다. 동일 조건으로 추가 100세대면 비례율 <b>120.2%</b>, 추가 200세대면 <b>117.9%</b>로 계산됩니다.</p>
+<details class="fold-detail"><summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary><div class="fold-body"><p>단독 10필지 종전자산 270억원이 빌라 100세대 550억원으로 바뀌면 종전자산평가액이 280억원 늘어납니다.</p><div class="tw"><table><thead><tr><th>구분</th><th class="n">현재</th><th class="n">추가 100</th><th class="n">추가 200</th></tr></thead><tbody><tr><td>토지등소유자</td><td class="n">858</td><td class="n">948</td><td class="n">1,038</td></tr><tr><td>종전자산</td><td class="n">13,662억</td><td class="n">13,942억</td><td class="n">14,222억</td></tr><tr class="hi"><td>비례율</td><td class="n">122.7%</td><td class="n">120.2%</td><td class="n">117.9%</td></tr><tr><td>빌라 권리가액</td><td class="n">6.75억</td><td class="n">6.61억</td><td class="n">6.48억</td></tr><tr><td>단독 권리가액</td><td class="n">33.13억</td><td class="n">32.46억</td><td class="n">31.82억</td></tr></tbody></table></div><p class="note">현재 858명 = 실사 768명 + 허가 다세대 100세대 − 멸실 단독 10필지.</p></div></details></section>
+
+<!-- 휴먼타운 -->
+<section><h2>휴먼타운 2.0과는 사업 방식이 다릅니다</h2><p class="fold-intro">휴먼타운 2.0은 전면 개발이 어려운 저층주거지의 <b>개별 필지 신축·리모델링</b>을 지원하는 서울시 사업입니다. 고덕1 재개발은 구역 전체를 묶어 공동주택을 건설하는 방식으로 구조가 다릅니다.<br><br>고덕1지구는 면적의 <b>93.70%가 제2종일반주거지역</b>이고 제3종 상향을 전제로 2,701세대 사업수지를 검토하고 있습니다.</p>
+<details class="fold-detail"><summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary><div class="fold-body"><div class="tw"><table><thead><tr><th>구분</th><th>고덕1 재개발</th><th>휴먼타운 2.0</th></tr></thead><tbody><tr><td>정비 단위</td><td>구역 전체</td><td>개별·인접 필지</td></tr><tr><td>주체</td><td>조합</td><td>개별 건축주</td></tr><tr><td>결과물</td><td>공동주택 중심 2,701세대 계획</td><td>단독·다가구·다세대 신축·리모델링</td></tr></tbody></table></div><p class="note">서울시는 2026년에도 휴먼타운 2.0 특별건축구역 지정을 확대하고 있습니다.</p></div></details></section>
+
+<!-- 무엇을 짓나 -->
+<section><h2>무엇을 짓나</h2><p class="fold-intro">현재 계획은 <b>총 2,701세대</b>입니다. 분양주택 2,244세대, 의무임대 378세대, 도정법 §54 국민주택규모 주택 79세대입니다. 일반분양은 1,107세대입니다.</p>
+<details class="fold-detail"><summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary><div class="fold-body"><div class="tw"><table><thead><tr><th>평형</th><th class="n">조합원 1차</th><th class="n">추가</th><th class="n">일반</th><th class="n">의무임대</th><th class="n">§54</th><th class="n">합계</th></tr></thead><tbody><tr><td>39</td><td class="n">111</td><td class="n">120</td><td class="n">10</td><td class="n">231</td><td class="n">—</td><td class="n">472</td></tr><tr><td>49</td><td class="n">160</td><td class="n">160</td><td class="n">225</td><td class="n">80</td><td class="n">—</td><td class="n">625</td></tr><tr><td>59</td><td class="n">271</td><td class="n">—</td><td class="n">534</td><td class="n">67</td><td class="n">79</td><td class="n">951</td></tr><tr><td>84</td><td class="n">167</td><td class="n">—</td><td class="n">314</td><td class="n">—</td><td class="n">—</td><td class="n">481</td></tr><tr><td>99</td><td class="n">82</td><td class="n">—</td><td class="n">19</td><td class="n">—</td><td class="n">—</td><td class="n">101</td></tr><tr><td>125</td><td class="n">66</td><td class="n">—</td><td class="n">5</td><td class="n">—</td><td class="n">—</td><td class="n">71</td></tr><tr class="sum"><td>합계</td><td class="n">857</td><td class="n">280</td><td class="n">1,107</td><td class="n">378</td><td class="n">79</td><td class="n"><b>2,701</b></td></tr></tbody></table></div></div></details></section>
+
+<!-- 돈의 흐름 -->
+<section><h2>돈은 이렇게 흐릅니다</h2><p class="fold-intro"><b>총매출 36,453.6억원 − 총사업비 19,690.2억원 = 사업이익 16,763.5억원</b>입니다. 종전자산 13,662.0억원 대비 추정 비례율은 <b>122.7%</b>입니다.</p>
+<details class="fold-detail"><summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary><div class="fold-body"><div class="tw"><table><tbody><tr><td>총매출</td><td class="n">36,453.6억원</td></tr><tr><td>총사업비</td><td class="n">19,690.2억원</td></tr><tr><td>사업이익</td><td class="n">16,763.5억원</td></tr><tr><td>종전자산</td><td class="n">13,662.0억원</td></tr><tr class="hi"><td>비례율</td><td class="n"><b>122.7%</b></td></tr></tbody></table></div><p>권리가액: 빌라 6.75억 · 단독 33.13억 · 상가 45.40억 · 다가구 46.63억.</p></div></details></section>
+
+<!-- 강점 -->
+<section><h2>그 밖의 사업비 조건</h2><p class="fold-intro">조합방식으로 <b>신탁수수료는 반영하지 않았습니다.</b> 직접공사비는 가중평균 <b>1,050만원/평</b>입니다. 다만 무이자 이주비·PF 3년 4.5%·예비비 4.29%는 미확정 가정입니다.</p>
+<details class="fold-detail"><summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary><div class="fold-body"><div class="tw"><table><thead><tr><th>조건</th><th class="n">사업비 증가</th><th class="n">비례율</th></tr></thead><tbody><tr><td>예비비 7%</td><td class="n">+319.8억</td><td class="n">120.4%</td></tr><tr><td>무이자 이주비 미확보</td><td class="n">+314.6억</td><td class="n">120.4%</td></tr><tr><td>PF 4년·5.5%</td><td class="n">+304.2억</td><td class="n">120.5%</td></tr><tr class="hi"><td>세 조건 모두</td><td class="n">+938.5억</td><td class="n"><b>115.8%</b></td></tr></tbody></table></div></div></details></section>
+
+<!-- 가정 -->
+<section><h2>어떤 전제로 계산했나</h2><p class="fold-intro">핵심 전제는 <b>용적률 264.42%, 총 2,701세대, 일반분양 1,107세대, 소형 일반분양가 7,517만원/평, 조합원분양가율 70%</b>입니다. 종전자산은 단독 27억·빌라 5.5억·상가 37억·다가구/SH 38억입니다.</p>
+<details class="fold-detail"><summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary><div class="fold-body"><div class="tw"><table><tbody><tr><td>정비계획용적률</td><td>250.00%</td></tr><tr><td>적용 용적률</td><td>264.42%</td></tr><tr><td>건축물 기부채납 계수</td><td>1.0 가정</td></tr><tr><td>직접공사비</td><td>1,050만원/평</td></tr><tr><td>예비비</td><td>직접공사비 4.29%</td></tr><tr><td>이주비 이자</td><td>0원 가정</td></tr><tr><td>PF</td><td>3년·4.5%</td></tr><tr><td>1+1</td><td>49형 160세대 가정</td></tr></tbody></table></div></div></details></section>
+
+<!-- 유의 -->
+<section><h2>반드시 확인해 주세요</h2><p class="fold-intro"><b>비례율 122.7%, 분담금·환급금, 분양가와 자산 증가액은 모두 추정치</b>입니다. 종전자산, 용적률, 분양가, 금융조건, 1+1 물량 등은 향후 절차에서 달라질 수 있습니다.</p>
+<details class="fold-detail"><summary><span><span class="fold-more">자세히 보기</span><span class="fold-less">접기</span></span><span class="fold-chevron">⌄</span></summary><div class="fold-body"><div class="warn"><h3>확정값이 아닙니다</h3><ul><li>종전자산은 정식 감정평가로 확정</li><li>분양가는 심의·평가·관리처분에서 확정</li><li>용적률과 기부채납 시설 구성은 행정협의·심의 대상</li><li>무이자 이주비와 PF 조건 미달 시 사업비 증가</li><li>1+1·세대구분형은 현재 계획·가정</li></ul></div><p>비용조건 3개가 모두 불리하게 바뀌는 민감도에서는 비례율 115.8%입니다.</p></div></details></section>
+
+<!-- 동참 요청 -->
+<section><h2>여러분의 찬성이 필요합니다</h2><p>현재 분석은 <b>총 2,701세대 · 토지등소유자 858명 · 일반분양 1,107세대 · 추정 비례율 122.7%</b> 기준입니다. 소유자 한 분당 일반분양 물량은 <b>1.29세대</b>입니다.</p><p>평당 총사업비는 약 <b>1,607만원</b>으로 비교 5개 구역 평균 약 1,128만원보다 높게 계상했습니다. 다만 무이자 이주비·PF·예비비 등 일부 조건은 미확정입니다.</p><h3 class="sub">사업은 소유자의 동의와 행정절차에 따라 진행됩니다</h3><p>현재 허가된 신축 다세대 100세대를 이미 사업수지에 반영했고 추가 신축 민감도도 함께 제시했습니다. 궁금한 점은 아래 연락처로 문의해 주시기 바랍니다.</p></section>
+
+<!-- 연락처 -->
+<section>
+  <div class="mark">
+    <h2>문의하기</h2>
+    <p>내 재산 평가, 분담금, 사업 진행 상황 무엇이든 물어보십시오.</p>
+  </div>
+
+  <div class="contact">
+    <div class="crow">
+      <span class="clab">추진준비위원회</span>
+      <a class="cval" href="tel:01049855648">010-4985-5648</a>
+    </div>
+    <div class="crow">
+      <span class="clab">고덕1구역 재개발 단톡방</span>
+      <a class="cval" href="https://open.kakao.com/o/gRUxw1xi" target="_blank" rel="noopener">open.kakao.com/o/gRUxw1xi</a>
+    </div>
+  </div>
+
+  <p>위 단톡방은 누구나 들어올 수 있는 공개 대화방입니다. <b>소유주 전용 단톡방은 따로 운영합니다.</b> 추진준비위원회로 연락 주셔서 소유주 인증을 마치시면 소유주 단톡방으로 안내해 드립니다.</p>
+
+  <p class="note">소유주 단톡방에서는 사업 진행 상황과 관련 자료를 공유합니다.</p>
+
+  <div class="dlwrap" id="dlwrap" hidden>
+    <button type="button" id="dl">이 자료를 파일로 저장하기</button>
+    <span class="dlmsg" id="dlmsg"></span>
+  </div>
+</section>
+
+<footer>
+  고덕1지구 재개발정비사업 추진준비위원회 · 2026년 10월<br>
+  본 자료는 토지등소유자 안내용이며, 투자 권유나 수익 보장을 목적으로 하지 않습니다. 기재된 금액은 2026년 10월 14일 Rev.3 사업수지분석 기준 추정치로서 향후 감정평가, 인허가, 분양가 심의 및 관리처분 과정에서 변경될 수 있습니다.
+</footer>
+
+</div>
+
+
+<script id="godeok1SiteNav">
+(function(){
+  var MARKER='<!-- godeok1-site-nav:v1 -->';
+  var API='https://api.github.com/repos/comfunnylj/Real_estates/issues/1/comments?per_page=100';
+
+  var DEFAULT=[
+    {enabled:true,label:'사업 소개',sub:'사업수지·분담금',href:'./',page:'main'},
+    {enabled:true,label:'반대측 주장에 대한 논변',sub:'영상 13개 논점 검증',href:'./response.html',page:'response'},
+    {enabled:false,label:'미사용',sub:'추후 메뉴',href:'#',page:'unused'}
+  ];
+
+  function esc(s){return String(s||'')}
+  function currentPage(){
+    var declared=document.body && document.body.getAttribute('data-page');
+    if(declared) return declared;
+    var p=(location.pathname||'').toLowerCase();
+    return p.indexOf('response')>=0 ? 'response' : 'main';
+  }
+  function normalize(list){
+    return [0,1,2].map(function(i){
+      var b=DEFAULT[i],s=(list&&list[i])||{};
+      return {
+        enabled:typeof s.enabled==='boolean'?s.enabled:b.enabled,
+        label:esc(s.label||b.label),
+        sub:esc(s.sub||b.sub),
+        href:esc(s.href||b.href),
+        page:esc(s.page||b.page)
+      };
+    });
+  }
+  function render(list){
+    var nav=document.getElementById('siteSwitcher'); if(!nav)return;
+    nav.innerHTML='';
+    var cur=currentPage();
+    normalize(list).forEach(function(x,i){
+      var el=document.createElement(x.enabled?'a':'div');
+      el.className='site-switch'+(x.page===cur?' is-active':'')+(x.page==='response'?' is-response':'')+(!x.enabled?' is-disabled':'');
+      if(x.enabled) el.href=x.href;
+      else el.setAttribute('aria-disabled','true');
+      el.innerHTML='<span>'+x.label+(x.sub?'<small>'+x.sub+'</small>':'')+'</span>';
+      nav.appendChild(el);
+    });
+  }
+  function parse(body){
+    if(typeof body!=='string'||body.indexOf(MARKER)!==0)return null;
+    try{
+      var o=JSON.parse(body.slice(MARKER.length).trim());
+      return o&&Array.isArray(o.items)?o.items:null;
+    }catch(e){return null}
+  }
+  render(DEFAULT);
+  fetch(API+'&_='+Date.now(),{headers:{Accept:'application/vnd.github+json'},cache:'no-store'})
+    .then(function(r){if(!r.ok)throw 0;return r.json()})
+    .then(function(cs){var f=null;cs.forEach(function(c){var x=parse(c.body);if(x)f=x});if(f)render(f)})
+    .catch(function(){});
+})();
+</script>
+
+<script>
+(function(){
+var RATIO=1.227,P49=10.69,G49=15.27;
+var U=[["39형",8.62,12.31],["49형",10.69,15.27],["59형",12.76,18.23],["84형",15.32,21.88],["99형",17.23,24.61],["125형",19.78,28.25]];
+var amt=document.getElementById("amt"),rng=document.getElementById("rng"),gv=document.getElementById("gv"),tb=document.getElementById("tb"),plus=document.getElementById("plus"),btns=[].slice.call(document.querySelectorAll(".presets button"));
+function f(x){return x.toFixed(2)}
+function render(v){var r=v*RATIO,on=plus.checked;gv.textContent=f(r);document.getElementById("rt").lastElementChild.textContent="= "+v+"억 × 122.7%";var rows="";
+U.forEach(function(u){if(on&&u[0]=="39형")return;var p=u[1]+(on?P49:0),g=u[2]+(on?G49:0),d=p-r;rows+="<tr><td>"+u[0]+(on?" + 49형":"")+"</td><td class=n>"+f(p)+"억</td><td class=n>"+f(g)+"억</td><td class=n>"+f(g-p)+"억</td><td class='n "+(d>0?"pay":"ref")+"'>"+(d>0?"+"+f(d)+"억 부담":f(Math.abs(d))+"억 환급")+"</td></tr>"});tb.innerHTML=rows;btns.forEach(function(b){b.setAttribute("aria-pressed",String(parseFloat(b.dataset.v)===v))})}
+var cur=5.5;function set(v){v=Math.min(60,Math.max(1,isNaN(v)?5.5:v));cur=v;amt.value=v;rng.value=v;render(v)}
+amt.addEventListener("input",function(){set(parseFloat(amt.value))});rng.addEventListener("input",function(){set(parseFloat(rng.value))});plus.addEventListener("change",function(){render(cur)});btns.forEach(function(b){b.addEventListener("click",function(){set(parseFloat(b.dataset.v))})});set(5.5);
+})();
+</script>
+
+<script id="dl-js">
+/* 파일 저장 — 이 뷰에서 지원될 때만 버튼을 띄웁니다 */
+(function(){
+  var wrap=document.getElementById('dlwrap'),
+      btn=document.getElementById('dl'),
+      msg=document.getElementById('dlmsg');
+  if(!wrap||!window.claude||!claude.use) return;
+
+  claude.use("downloads").then(function(downloads){
+    if(!downloads) return;
+    wrap.hidden=false;
+
+    btn.addEventListener('click',function(){
+      btn.disabled=true; msg.textContent='';
+      var doc=document.documentElement.cloneNode(true);
+      var dj=doc.querySelector('#dl-js'); if(dj) dj.remove();
+      var w=doc.querySelector('#dlwrap'); if(w) w.remove();
+      var html='<!DOCTYPE html>\n'+doc.outerHTML;
+
+      downloads.save({filename:'고덕1지구_재개발_안내.html', data:html})
+        .then(function(){ msg.textContent='저장했습니다.'; })
+        .catch(function(e){
+          var c=e&&e.code;
+          if(c==='declined'){ msg.textContent=''; }
+          else if(c==='rate_limited'){ msg.textContent='잠시 후 다시 눌러 주세요.'; }
+          else { msg.textContent='이 화면에서는 저장할 수 없습니다.'; wrap.hidden=true; }
+        })
+        .then(function(){ btn.disabled=false; });
+    });
+  });
+})();
+</script>
+<a class="to-top" href="#top" aria-label="맨 위로 이동">↑ 맨위로</a>
+</body>
+</html>
